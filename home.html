@@ -1,0 +1,49 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Familia Echavarria</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/auth.js"></script>
+<script>requireAccess();</script>
+
+<main>
+  <h1>Familia Echavarria</h1>
+  <p class="sub">¿A quién buscas?</p>
+
+  <ul class="people">
+    <li>
+      <a href="papati.html">
+        <span class="emoji" aria-hidden="true">👨</span>
+        <span class="name">Papati</span>
+      </a>
+    </li>
+    <li>
+      <a href="mamati.html">
+        <span class="emoji" aria-hidden="true">👩</span>
+        <span class="name">Mamati</span>
+      </a>
+    </li>
+    <li>
+      <a href="pablito.html">
+        <span class="emoji" aria-hidden="true">🧒</span>
+        <span class="name">Pablito</span>
+      </a>
+    </li>
+    <li>
+      <a href="sofiti.html">
+        <span class="emoji" aria-hidden="true">👧</span>
+        <span class="name">Sofiti</span>
+      </a>
+    </li>
+  </ul>
+
+  <a class="link" href="#" id="logout">Salir</a>
+</main>
+
+<script>
+  document.getElementById('logout').addEventListener('click', event => {
+    event.preventDefault();
+    lock();
+    location.replace('index.html');
+  });
+</script>
