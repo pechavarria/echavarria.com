@@ -70,7 +70,7 @@ function initLogin({ form, input, error, next }) {
       unlock();
       location.replace(next);
     } else {
-      error.textContent = 'Código incorrecto. Intenta de nuevo.';
+      error.textContent = 'Incorrect code. Please try again.';
       input.value = '';
       input.focus();
     }
