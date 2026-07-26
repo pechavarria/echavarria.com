@@ -1,0 +1,374 @@
+<!-- Icon library. Each <g id> is drawn inside a 100x100 box.
+     Outer strokes inherit stroke-width 5; interior detail uses 3.2 or less. -->
+
+<!-- ============ sports ============ -->
+<g id="soccer">
+  <circle cx="50" cy="50" r="33"/>
+  <path d="M50 31 66 44 60 63H40l-6-19z" stroke-width="3.2"/>
+  <path d="M50 17v14M83 44 66 44M71 77 60 63M29 77l11-14M17 44l17 0" stroke-width="3.2"/>
+</g>
+<g id="basket">
+  <circle cx="50" cy="50" r="33"/>
+  <path d="M50 17v66M17 50h66" stroke-width="3.2"/>
+  <path d="M27 25q23 25 0 50M73 25q-23 25 0 50" stroke-width="3.2"/>
+</g>
+<g id="jersey">
+  <path d="M36 20 18 30l6 18 10-5v41h32V43l10 5 6-18-18-10z"/>
+  <path d="M36 20q6 9 14 9t14-9" stroke-width="3.2"/>
+  <path d="M44 58h12M50 52v14" stroke-width="3.2"/>
+</g>
+<g id="whistle">
+  <path d="M22 40h32a18 18 0 0 1 0 36H34a12 12 0 0 1-12-12z"/>
+  <circle cx="52" cy="58" r="7" stroke-width="3.2"/>
+  <path d="M22 48H10" stroke-width="4"/>
+</g>
+<g id="trophy">
+  <path d="M34 20h32v18a16 16 0 0 1-32 0z"/>
+  <path d="M34 24h-8a10 10 0 0 0 10 12M66 24h8a10 10 0 0 1-10 12" stroke-width="3.2"/>
+  <path d="M50 54v14M38 78h24M42 68h16" stroke-width="3.2"/>
+</g>
+
+<!-- ============ japan ============ -->
+<g id="nigiri">
+  <path d="M20 60q30-10 60 0 0 14-30 14T20 60z"/>
+  <path d="M18 54q32-14 64 0-2 8-32 8t-32-8z"/>
+  <path d="M44 52v24M56 52v24" stroke-width="3.2"/>
+</g>
+<g id="onigiri">
+  <path d="M46 26q4-6 8 0l26 44q4 7-4 7H24q-8 0-4-7z"/>
+  <path d="M34 58h32v19H34z" stroke-width="3.2"/>
+</g>
+<g id="maki">
+  <circle cx="50" cy="50" r="31"/>
+  <circle cx="50" cy="50" r="22" stroke-width="3.2"/>
+  <circle cx="50" cy="42" r="5" stroke-width="3.2"/>
+  <circle cx="43" cy="55" r="5" stroke-width="3.2"/>
+  <circle cx="57" cy="55" r="5" stroke-width="3.2"/>
+</g>
+<g id="ramen">
+  <path d="M14 50h72q-4 30-36 30T14 50z"/>
+  <path d="M18 58h64" stroke-width="3.2"/>
+  <path d="M26 50q4-10 12-6t12-6 12 6 12-4" stroke-width="3.2"/>
+  <circle cx="62" cy="63" r="7" stroke-width="3.2"/>
+  <path d="M64 44 88 26M70 46 92 32" stroke-width="3.2"/>
+</g>
+<g id="torii">
+  <path d="M14 32q36-6 72 0l-2 8q-34-5-68 0z"/>
+  <path d="M20 46h60" stroke-width="4"/>
+  <path d="M32 40v42M68 40v42"/>
+  <path d="M26 82h12M62 82h12" stroke-width="3.2"/>
+</g>
+<g id="fuji">
+  <path d="M12 76 50 24l38 52z"/>
+  <path d="M36 48q5 7 10 0t9 1 9-4" stroke-width="3.2"/>
+</g>
+<g id="chopsticks">
+  <path d="M24 82 70 20M36 86 82 26"/>
+  <path d="M20 78h14" stroke-width="3.2"/>
+</g>
+<g id="sake">
+  <path d="M40 20h14v8l8 12v38H32V40l8-12z"/>
+  <path d="M32 52h30" stroke-width="3.2"/>
+  <path d="M66 62h20l-3 14H69z" stroke-width="3.2"/>
+</g>
+
+<!-- ============ china ============ -->
+<g id="pagoda">
+  <path d="M16 38q34-8 68 0-14 6-34 6t-34-6z"/>
+  <path d="M22 56q28-7 56 0-12 5-28 5t-28-5z" stroke-width="4"/>
+  <path d="M28 74q22-6 44 0-10 4-22 4t-22-4z" stroke-width="4"/>
+  <path d="M50 20v18M40 44v12M60 44v12M44 62v12M56 62v12" stroke-width="3.2"/>
+  <path d="M44 78h12v10H44z" stroke-width="3.2"/>
+</g>
+<g id="dumpling">
+  <path d="M18 66q4-28 32-28t32 28z"/>
+  <path d="M18 66h64" stroke-width="4"/>
+  <path d="M28 62q6-12 12 0M44 60q6-12 12 0M60 62q6-12 10 0" stroke-width="3.2"/>
+</g>
+<g id="lantern">
+  <path d="M40 18h20M44 24h12"/>
+  <path d="M50 24q30 0 30 26t-30 26-30-26 30-26z"/>
+  <path d="M50 24v52M36 28q-6 22 0 44M64 28q6 22 0 44" stroke-width="3.2"/>
+  <path d="M50 76v8M44 88l6-4 6 4" stroke-width="3.2"/>
+</g>
+<g id="panda">
+  <circle cx="50" cy="56" r="25"/>
+  <circle cx="31" cy="32" r="10"/>
+  <circle cx="69" cy="32" r="10"/>
+  <ellipse cx="40" cy="52" rx="7" ry="9" stroke-width="3.2"/>
+  <ellipse cx="60" cy="52" rx="7" ry="9" stroke-width="3.2"/>
+  <circle cx="50" cy="64" r="4" stroke-width="3.2"/>
+  <path d="M43 72q7 6 14 0" stroke-width="3.2"/>
+</g>
+
+<!-- ============ france ============ -->
+<g id="eiffel">
+  <path d="M30 86q6-40 20-70 14 30 20 70"/>
+  <path d="M38 46h24M34 62h32M26 86h48" stroke-width="3.2"/>
+  <path d="M40 46 60 62M60 46 40 62" stroke-width="2.6"/>
+  <path d="M42 34q8-6 16 0" stroke-width="2.6"/>
+</g>
+<g id="croissant">
+  <path d="M18 64q0-32 32-32t32 32q-12-12-32-12t-32 12z"/>
+  <path d="M32 44q6 6 6 14M50 34v16M68 44q-6 6-6 14" stroke-width="3.2"/>
+  <path d="M18 64q-6-4-4-10M82 64q6-4 4-10" stroke-width="3.2"/>
+</g>
+<g id="baguette">
+  <g transform="rotate(-16 50 50)">
+    <rect x="14" y="42" width="72" height="18" rx="9"/>
+    <path d="M28 46l-4 10M40 44l-4 12M52 44l-4 12M64 45l-4 10M74 47l-3 8" stroke-width="3.2"/>
+  </g>
+</g>
+<g id="wine">
+  <path d="M30 18h20l-3 22a8 8 0 0 1-14 0z"/>
+  <path d="M40 48v22M32 72h16" stroke-width="3.2"/>
+  <path d="M62 24h14v10l4 8v34H58V42l4-8z"/>
+  <path d="M58 56h22" stroke-width="3.2"/>
+</g>
+<g id="arc">
+  <path d="M20 82V34h60v48"/>
+  <path d="M20 46h60" stroke-width="3.2"/>
+  <path d="M38 82V62a12 12 0 0 1 24 0v20" stroke-width="3.2"/>
+  <path d="M20 34 50 22l30 12" stroke-width="3.2"/>
+</g>
+
+<!-- ============ italy ============ -->
+<g id="pizza">
+  <path d="M50 18 22 74q26 12 56 0z"/>
+  <path d="M22 74q26 12 56 0" stroke-width="4"/>
+  <circle cx="44" cy="52" r="5" stroke-width="3.2"/>
+  <circle cx="58" cy="62" r="5" stroke-width="3.2"/>
+  <circle cx="50" cy="36" r="4" stroke-width="3.2"/>
+</g>
+<g id="colosseum">
+  <path d="M20 46q30-14 60 0v32H20z"/>
+  <path d="M20 58h60M20 70h60" stroke-width="3.2"/>
+  <path d="M30 58v-8a5 5 0 0 1 10 0v8M46 56v-8a5 5 0 0 1 10 0v8M62 58v-6a5 5 0 0 1 10 0v6" stroke-width="2.6"/>
+</g>
+<g id="pisa">
+  <g transform="rotate(11 50 84)">
+    <path d="M38 84V24h24v60"/>
+    <path d="M38 36h24M38 48h24M38 60h24M38 72h24" stroke-width="2.6"/>
+    <path d="M32 84h36" stroke-width="4"/>
+    <path d="M41 24h18l-2-7H43z" stroke-width="3.2"/>
+  </g>
+</g>
+<g id="gondola">
+  <path d="M12 62h68q-8 14-34 14T12 62z"/>
+  <path d="M12 62q0-8 8-10" stroke-width="3.2"/>
+  <path d="M80 62V34q-8 2-8 10" stroke-width="3.2"/>
+  <path d="M30 58 44 44" stroke-width="3.2"/>
+</g>
+<g id="pasta">
+  <path d="M14 52h72q-4 28-36 28T14 52z"/>
+  <path d="M18 60h64" stroke-width="3.2"/>
+  <path d="M50 48V22M44 26h12M44 34h12" stroke-width="3.2"/>
+  <path d="M28 50q6-8 14-2t14-4 14 2" stroke-width="3.2"/>
+</g>
+<g id="gelato">
+  <path d="M34 44 50 88 66 44z"/>
+  <path d="M38 54h24M42 66h16" stroke-width="2.6"/>
+  <path d="M34 44q0-14 16-14t16 14z"/>
+  <circle cx="50" cy="24" r="5" stroke-width="3.2"/>
+</g>
+
+<!-- ============ spain ============ -->
+<g id="paella">
+  <circle cx="50" cy="52" r="26"/>
+  <circle cx="50" cy="52" r="18" stroke-width="2.6"/>
+  <path d="M24 52H14M76 52h10" stroke-width="4"/>
+  <path d="M42 48q8-8 14 0" stroke-width="3.2"/>
+  <circle cx="44" cy="60" r="3" stroke-width="2.6"/>
+  <circle cx="57" cy="58" r="3" stroke-width="2.6"/>
+</g>
+<g id="guitar">
+  <circle cx="44" cy="66" r="19"/>
+  <circle cx="52" cy="42" r="13"/>
+  <circle cx="44" cy="66" r="6" stroke-width="3.2"/>
+  <path d="M58 32 78 14" stroke-width="4"/>
+  <path d="M74 10l8 8-6 6" stroke-width="3.2"/>
+</g>
+<g id="fan">
+  <path d="M50 80 18 40q18-16 32-16t32 16z"/>
+  <path d="M50 80 32 46M50 80V40M50 80 68 46" stroke-width="3.2"/>
+  <path d="M26 50q24-14 48 0" stroke-width="2.6"/>
+</g>
+
+<!-- ============ croatia ============ -->
+<g id="sailboat">
+  <path d="M14 66h72q-8 14-36 14T14 66z"/>
+  <path d="M46 62V16L22 62z"/>
+  <path d="M54 62V28l24 34z"/>
+</g>
+<g id="lighthouse">
+  <path d="M36 80 40 40h20l4 40z"/>
+  <path d="M38 56h24M39 68h22" stroke-width="3.2"/>
+  <path d="M36 40h28l-4-8H40z"/>
+  <path d="M46 32v-8h8v8" stroke-width="3.2"/>
+  <path d="M20 26l12 4M80 26l-12 4" stroke-width="2.6"/>
+</g>
+<g id="waves">
+  <path d="M12 40q12-10 24 0t24 0 26 0"/>
+  <path d="M12 58q12-10 24 0t24 0 26 0"/>
+  <path d="M12 76q12-10 24 0t24 0 26 0"/>
+</g>
+
+<!-- ============ texas ============ -->
+<g id="longhorn">
+  <path d="M34 42q0-16 16-16t16 16v10q0 16-16 22T34 54z"/>
+  <circle cx="43" cy="48" r="4" stroke-width="3.2"/>
+  <circle cx="57" cy="48" r="4" stroke-width="3.2"/>
+  <path d="M34 40Q14 32 6 16q16 2 28 14M66 40q20-8 28-24-16 2-28 14"/>
+  <path d="M45 68h10" stroke-width="3.2"/>
+</g>
+<g id="cowboyhat">
+  <path d="M32 58q0-32 18-32t18 32"/>
+  <path d="M30 50q20 9 40 0" stroke-width="3.2"/>
+  <path d="M10 62q14-7 40-7t40 7q-14 13-40 13T10 62z"/>
+</g>
+<g id="boot">
+  <path d="M36 16h18l2 32 16 10v20H34q-4-32 2-62z"/>
+  <path d="M34 68h38" stroke-width="3.2"/>
+  <path d="M38 30h16M38 42h18" stroke-width="2.6"/>
+  <circle cx="78" cy="82" r="5" stroke-width="2.6"/>
+</g>
+<g id="star">
+  <path d="M50 14 61 40h28L66 57l9 27-25-17-25 17 9-27L11 40h28z"/>
+</g>
+<g id="cactus">
+  <path d="M42 86V32a8 8 0 0 1 16 0v54z"/>
+  <path d="M42 58H30a8 8 0 0 1-8-8V38M58 66h12a8 8 0 0 0 8-8V44" stroke-width="4"/>
+  <path d="M36 86h28" stroke-width="3.2"/>
+  <circle cx="50" cy="26" r="5" stroke-width="3.2"/>
+</g>
+
+<!-- ============ oregon / colorado ============ -->
+<g id="pine">
+  <path d="M50 14 36 38h28z"/>
+  <path d="M50 30 30 58h40z"/>
+  <path d="M50 48 24 80h52z"/>
+  <path d="M50 80v8M42 88h16" stroke-width="3.2"/>
+</g>
+<g id="mountains">
+  <path d="M8 78 34 30l18 30 12-18 26 36z"/>
+  <path d="M26 48h16M58 48h12" stroke-width="3.2"/>
+</g>
+<g id="skis">
+  <path d="M34 84 26 22q0-6 6-6t6 6l-2 62" stroke-width="4"/>
+  <path d="M56 84 66 24q1-6 7-5t5 7l-12 58" stroke-width="4"/>
+  <path d="M14 30v54M18 30h-8" stroke-width="3.2"/>
+</g>
+<g id="balloon">
+  <path d="M50 16q26 0 26 26 0 18-26 34Q24 60 24 42 24 16 50 16z"/>
+  <path d="M50 16v60M32 24q-4 26 8 44M68 24q4 26-8 44" stroke-width="3.2"/>
+  <path d="M40 80h20l-2 10H42z" stroke-width="3.2"/>
+</g>
+
+<!-- ============ california ============ -->
+<g id="palm">
+  <path d="M54 88q-6-30-2-46"/>
+  <path d="M52 42Q34 26 16 34q16-2 22 4M52 42q18-14 34-4-16-2-24 6M52 42q-8-18 4-28-8 12-2 20"/>
+  <circle cx="46" cy="48" r="4" stroke-width="2.6"/>
+  <path d="M44 88h22" stroke-width="3.2"/>
+</g>
+<g id="bridge">
+  <path d="M8 70h84" stroke-width="4"/>
+  <path d="M28 70V22M72 70V22"/>
+  <path d="M28 26q22 28 44 0" stroke-width="3.2"/>
+  <path d="M8 42 28 24M92 42 72 24" stroke-width="3.2"/>
+  <path d="M38 40v22M48 48v14M62 40v22" stroke-width="2"/>
+</g>
+<g id="surf">
+  <g transform="rotate(24 50 50)">
+    <path d="M50 8q16 22 16 42T50 92Q34 70 34 50T50 8z"/>
+    <path d="M50 20v54" stroke-width="2.6"/>
+    <path d="M50 74l-7 14h14z" stroke-width="3.2"/>
+  </g>
+</g>
+
+<!-- ============ travel ============ -->
+<g id="plane">
+  <path d="M10 54 88 30q6-2 6 4t-6 6L54 54 40 82l-8 2 2-24z"/>
+  <path d="M34 60 12 74l2 8 22-12" stroke-width="3.2"/>
+</g>
+<g id="suitcase">
+  <rect x="18" y="36" width="64" height="44" rx="7"/>
+  <path d="M38 36V26h24v10" stroke-width="3.2"/>
+  <path d="M34 36v44M66 36v44" stroke-width="3.2"/>
+  <path d="M46 60h8v10h-8z" stroke-width="2.6"/>
+</g>
+<g id="camera">
+  <rect x="12" y="34" width="76" height="46" rx="8"/>
+  <circle cx="50" cy="57" r="16"/>
+  <circle cx="50" cy="57" r="8" stroke-width="3.2"/>
+  <path d="M32 34l6-10h24l6 10" stroke-width="3.2"/>
+  <circle cx="76" cy="44" r="3.4" stroke-width="2.6"/>
+</g>
+<g id="compass">
+  <circle cx="50" cy="50" r="33"/>
+  <circle cx="50" cy="50" r="25" stroke-width="2.6"/>
+  <path d="M64 36 44 44l-8 20 20-8z" stroke-width="3.2"/>
+</g>
+<g id="globe">
+  <circle cx="50" cy="50" r="33"/>
+  <path d="M17 50h66" stroke-width="3.2"/>
+  <ellipse cx="50" cy="50" rx="15" ry="33" stroke-width="3.2"/>
+  <path d="M24 32q26 10 52 0M24 68q26-10 52 0" stroke-width="2.6"/>
+</g>
+<g id="passport">
+  <rect x="24" y="16" width="52" height="68" rx="6"/>
+  <path d="M30 16v68" stroke-width="2.6"/>
+  <circle cx="54" cy="40" r="10" stroke-width="3.2"/>
+  <path d="M42 60h24M42 70h24" stroke-width="2.6"/>
+</g>
+<g id="map">
+  <path d="M12 28 36 20l28 8 24-8v52l-24 8-28-8-24 8z"/>
+  <path d="M36 20v52M64 28v52" stroke-width="2.6"/>
+  <path d="M62 36a8 8 0 0 0-8 8q0 8 8 14 8-6 8-14a8 8 0 0 0-8-8z" stroke-width="3.2"/>
+</g>
+<g id="backpack">
+  <path d="M24 44q0-20 26-20t26 20v36H24z"/>
+  <path d="M24 56q26 10 52 0" stroke-width="3.2"/>
+  <path d="M38 24q0-10 12-10t12 10" stroke-width="3.2"/>
+  <path d="M40 66h20v14H40z" stroke-width="2.6"/>
+</g>
+<g id="glasses">
+  <circle cx="28" cy="52" r="16"/>
+  <circle cx="72" cy="52" r="16"/>
+  <path d="M44 50h12" stroke-width="3.2"/>
+  <path d="M12 48 4 36M88 48l8-12" stroke-width="3.2"/>
+</g>
+<g id="coffee">
+  <path d="M24 40h44v22a16 16 0 0 1-16 16H40a16 16 0 0 1-16-16z"/>
+  <path d="M68 46h8a9 9 0 0 1 0 18h-8" stroke-width="3.2"/>
+  <path d="M24 52h44" stroke-width="3.2"/>
+  <path d="M36 30q0-7 5-11M50 30q0-7 5-11" stroke-width="2.6"/>
+</g>
+<g id="ticket">
+  <path d="M12 36h76v12a6 6 0 0 0 0 12v12H12V60a6 6 0 0 0 0-12z"/>
+  <path d="M62 36v36" stroke-width="2" stroke-dasharray="5 5"/>
+  <path d="M22 48h28M22 58h20" stroke-width="2.6"/>
+</g>
+<g id="signpost">
+  <path d="M50 88V22"/>
+  <path d="M50 30h32l-9 11H50zM50 50H20l9 11h21z" stroke-width="3.2"/>
+</g>
+<g id="sun">
+  <circle cx="50" cy="50" r="18"/>
+  <path d="M50 20V10M50 80v10M20 50H10M80 50h10M28 28l-7-7M72 28l7-7M28 72l-7 7M72 72l7 7" stroke-width="4"/>
+</g>
+<g id="cloud">
+  <path d="M28 70q-14 0-14-12t14-12q2-16 18-16t18 14q14 0 14 13t-14 13z"/>
+</g>
+
+<!-- ============ filler marks ============ -->
+<g id="f-dot"><circle cx="50" cy="50" r="10" fill="#101828" stroke="none"/></g>
+<g id="f-ring"><circle cx="50" cy="50" r="17" stroke-width="7"/></g>
+<g id="f-star"><path d="M50 24 58 43l20 2-15 13 5 19-18-11-18 11 5-19-15-13 20-2z" stroke-width="7"/></g>
+<g id="f-spark"><path d="M50 18v26M50 56v26M18 50h26M56 50h26" stroke-width="8"/></g>
+<g id="f-heart"><path d="M50 80Q20 58 20 41a15 15 0 0 1 30-6 15 15 0 0 1 30 6q0 17-30 39z" stroke-width="7"/></g>
+<g id="f-tri"><path d="M50 24 78 74H22z" stroke-width="7"/></g>
+<g id="f-arc"><path d="M24 42q26 28 52 0" stroke-width="8"/></g>
+<g id="f-plus"><path d="M50 26v48M26 50h48" stroke-width="8"/></g>
+<g id="f-x"><path d="M30 30 70 70M70 30 30 70" stroke-width="8"/></g>
+<g id="f-diamond"><path d="M50 24 74 50 50 76 26 50z" stroke-width="7"/></g>

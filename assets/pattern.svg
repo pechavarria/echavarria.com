@@ -1,213 +1,973 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="600" viewBox="0 0 720 600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
   <!--
-    Tiling doodle pattern for the login background. Each icon is authored in a
-    100x100 box centred on (50,50), then placed with
-    translate(cx cy) rotate(r) scale(s) translate(-50 -50).
+    GENERATED FILE - do not hand-edit.
+    Rebuild with scratchpad/gen-pattern.ps1 (seed 20260726).
 
-    Coverage: Texas (lone star, boot, cactus), Oregon (pine), California (palm,
-    Golden Gate), Colorado (mountains), France (Eiffel, croissant, wine),
-    Japan (torii, Fuji, nigiri, maki, chopsticks), China (pagoda, dumpling),
-    Italy (pizza, Colosseum), Croatia (sailboat), Spain (paella, guitar),
-    plus soccer, basketball and travel odds and ends.
+    Doodle tile for the login background: 169 icons + 369 filler marks,
+    stratified-scattered with toroidal spacing so the tile repeats without a seam.
+    Icons cover the family's travels (Texas, Oregon, California, Colorado,
+    France, Japan, China, Italy, Croatia, Spain), soccer, basketball, and food.
   -->
   <defs>
-    <!-- sports -->
-    <g id="soccer">
-      <circle cx="50" cy="50" r="32"/>
-      <path d="M50 32 66 44 60 62H40l-6-18z"/>
-      <path d="M50 18v14M82 44 66 44M72 76 60 62M28 76l12-14M18 44l16 0"/>
-    </g>
-    <g id="basket">
-      <circle cx="50" cy="50" r="32"/>
-      <path d="M50 18v64M18 50h64"/>
-      <path d="M28 26q22 24 0 48M72 26q-22 24 0 48"/>
-    </g>
+<!-- Icon library. Each <g id> is drawn inside a 100x100 box.
+     Outer strokes inherit stroke-width 5; interior detail uses 3.2 or less. -->
 
-    <!-- japan -->
-    <g id="nigiri">
-      <rect x="24" y="54" width="52" height="22" rx="11"/>
-      <rect x="22" y="38" width="56" height="16" rx="8" transform="rotate(-5 50 46)"/>
-      <path d="M48 38v16"/>
-    </g>
-    <g id="maki">
-      <circle cx="50" cy="50" r="30"/>
-      <circle cx="50" cy="50" r="15"/>
-      <circle cx="50" cy="43" r="4"/>
-    </g>
-    <g id="torii">
-      <path d="M18 34h64M24 24h52M34 34v48M66 34v48M30 48h40"/>
-    </g>
-    <g id="fuji">
-      <path d="M18 74 50 26l32 48z"/>
-      <path d="M38 47q6 7 12 0t12 0"/>
-    </g>
-    <g id="chopsticks">
-      <path d="M28 80 66 22M40 84 78 30"/>
-      <path d="M62 20l8 4M74 28l8 4"/>
-    </g>
+<!-- ============ sports ============ -->
+<g id="soccer">
+  <circle cx="50" cy="50" r="33"/>
+  <path d="M50 31 66 44 60 63H40l-6-19z" stroke-width="3.2"/>
+  <path d="M50 17v14M83 44 66 44M71 77 60 63M29 77l11-14M17 44l17 0" stroke-width="3.2"/>
+</g>
+<g id="basket">
+  <circle cx="50" cy="50" r="33"/>
+  <path d="M50 17v66M17 50h66" stroke-width="3.2"/>
+  <path d="M27 25q23 25 0 50M73 25q-23 25 0 50" stroke-width="3.2"/>
+</g>
+<g id="jersey">
+  <path d="M36 20 18 30l6 18 10-5v41h32V43l10 5 6-18-18-10z"/>
+  <path d="M36 20q6 9 14 9t14-9" stroke-width="3.2"/>
+  <path d="M44 58h12M50 52v14" stroke-width="3.2"/>
+</g>
+<g id="whistle">
+  <path d="M22 40h32a18 18 0 0 1 0 36H34a12 12 0 0 1-12-12z"/>
+  <circle cx="52" cy="58" r="7" stroke-width="3.2"/>
+  <path d="M22 48H10" stroke-width="4"/>
+</g>
+<g id="trophy">
+  <path d="M34 20h32v18a16 16 0 0 1-32 0z"/>
+  <path d="M34 24h-8a10 10 0 0 0 10 12M66 24h8a10 10 0 0 1-10 12" stroke-width="3.2"/>
+  <path d="M50 54v14M38 78h24M42 68h16" stroke-width="3.2"/>
+</g>
 
-    <!-- china -->
-    <g id="pagoda">
-      <path d="M22 40h56L50 22z"/>
-      <path d="M28 58h44L50 40z"/>
-      <path d="M34 76h32L50 58z"/>
-      <path d="M46 76v10h8V76"/>
-    </g>
-    <g id="dumpling">
-      <path d="M20 64a30 26 0 0 1 60 0z"/>
-      <path d="M28 64q6-8 12 0M46 64q6-8 12 0M64 64q6-8 8 0"/>
-    </g>
+<!-- ============ japan ============ -->
+<g id="nigiri">
+  <path d="M20 60q30-10 60 0 0 14-30 14T20 60z"/>
+  <path d="M18 54q32-14 64 0-2 8-32 8t-32-8z"/>
+  <path d="M44 52v24M56 52v24" stroke-width="3.2"/>
+</g>
+<g id="onigiri">
+  <path d="M46 26q4-6 8 0l26 44q4 7-4 7H24q-8 0-4-7z"/>
+  <path d="M34 58h32v19H34z" stroke-width="3.2"/>
+</g>
+<g id="maki">
+  <circle cx="50" cy="50" r="31"/>
+  <circle cx="50" cy="50" r="22" stroke-width="3.2"/>
+  <circle cx="50" cy="42" r="5" stroke-width="3.2"/>
+  <circle cx="43" cy="55" r="5" stroke-width="3.2"/>
+  <circle cx="57" cy="55" r="5" stroke-width="3.2"/>
+</g>
+<g id="ramen">
+  <path d="M14 50h72q-4 30-36 30T14 50z"/>
+  <path d="M18 58h64" stroke-width="3.2"/>
+  <path d="M26 50q4-10 12-6t12-6 12 6 12-4" stroke-width="3.2"/>
+  <circle cx="62" cy="63" r="7" stroke-width="3.2"/>
+  <path d="M64 44 88 26M70 46 92 32" stroke-width="3.2"/>
+</g>
+<g id="torii">
+  <path d="M14 32q36-6 72 0l-2 8q-34-5-68 0z"/>
+  <path d="M20 46h60" stroke-width="4"/>
+  <path d="M32 40v42M68 40v42"/>
+  <path d="M26 82h12M62 82h12" stroke-width="3.2"/>
+</g>
+<g id="fuji">
+  <path d="M12 76 50 24l38 52z"/>
+  <path d="M36 48q5 7 10 0t9 1 9-4" stroke-width="3.2"/>
+</g>
+<g id="chopsticks">
+  <path d="M24 82 70 20M36 86 82 26"/>
+  <path d="M20 78h14" stroke-width="3.2"/>
+</g>
+<g id="sake">
+  <path d="M40 20h14v8l8 12v38H32V40l8-12z"/>
+  <path d="M32 52h30" stroke-width="3.2"/>
+  <path d="M66 62h20l-3 14H69z" stroke-width="3.2"/>
+</g>
 
-    <!-- italy -->
-    <g id="pizza">
-      <path d="M50 20 24 72a58 58 0 0 0 52 0z"/>
-      <circle cx="43" cy="52" r="4"/>
-      <circle cx="58" cy="60" r="4"/>
-      <circle cx="50" cy="38" r="3"/>
-    </g>
-    <g id="colosseum">
-      <path d="M22 48a28 18 0 0 1 56 0v28H22z"/>
-      <path d="M22 62h56"/>
-      <path d="M33 76V64a6 6 0 0 1 12 0v12M55 76V64a6 6 0 0 1 12 0v12"/>
-    </g>
+<!-- ============ china ============ -->
+<g id="pagoda">
+  <path d="M16 38q34-8 68 0-14 6-34 6t-34-6z"/>
+  <path d="M22 56q28-7 56 0-12 5-28 5t-28-5z" stroke-width="4"/>
+  <path d="M28 74q22-6 44 0-10 4-22 4t-22-4z" stroke-width="4"/>
+  <path d="M50 20v18M40 44v12M60 44v12M44 62v12M56 62v12" stroke-width="3.2"/>
+  <path d="M44 78h12v10H44z" stroke-width="3.2"/>
+</g>
+<g id="dumpling">
+  <path d="M18 66q4-28 32-28t32 28z"/>
+  <path d="M18 66h64" stroke-width="4"/>
+  <path d="M28 62q6-12 12 0M44 60q6-12 12 0M60 62q6-12 10 0" stroke-width="3.2"/>
+</g>
+<g id="lantern">
+  <path d="M40 18h20M44 24h12"/>
+  <path d="M50 24q30 0 30 26t-30 26-30-26 30-26z"/>
+  <path d="M50 24v52M36 28q-6 22 0 44M64 28q6 22 0 44" stroke-width="3.2"/>
+  <path d="M50 76v8M44 88l6-4 6 4" stroke-width="3.2"/>
+</g>
+<g id="panda">
+  <circle cx="50" cy="56" r="25"/>
+  <circle cx="31" cy="32" r="10"/>
+  <circle cx="69" cy="32" r="10"/>
+  <ellipse cx="40" cy="52" rx="7" ry="9" stroke-width="3.2"/>
+  <ellipse cx="60" cy="52" rx="7" ry="9" stroke-width="3.2"/>
+  <circle cx="50" cy="64" r="4" stroke-width="3.2"/>
+  <path d="M43 72q7 6 14 0" stroke-width="3.2"/>
+</g>
 
-    <!-- france -->
-    <g id="eiffel">
-      <path d="M34 84 50 16l16 68"/>
-      <path d="M41 54h18M37 68h26M28 84h44"/>
-      <path d="M50 16v10"/>
-    </g>
-    <g id="croissant">
-      <path d="M20 62q0-30 30-30t30 30q-10-10-30-10t-30 10z"/>
-      <path d="M34 42l6 8M50 34v10M66 42l-6 8"/>
-    </g>
-    <g id="wine">
-      <path d="M34 22h32l-4 24a12 12 0 0 1-24 0z"/>
-      <path d="M50 58v20M38 80h24"/>
-    </g>
+<!-- ============ france ============ -->
+<g id="eiffel">
+  <path d="M30 86q6-40 20-70 14 30 20 70"/>
+  <path d="M38 46h24M34 62h32M26 86h48" stroke-width="3.2"/>
+  <path d="M40 46 60 62M60 46 40 62" stroke-width="2.6"/>
+  <path d="M42 34q8-6 16 0" stroke-width="2.6"/>
+</g>
+<g id="croissant">
+  <path d="M18 64q0-32 32-32t32 32q-12-12-32-12t-32 12z"/>
+  <path d="M32 44q6 6 6 14M50 34v16M68 44q-6 6-6 14" stroke-width="3.2"/>
+  <path d="M18 64q-6-4-4-10M82 64q6-4 4-10" stroke-width="3.2"/>
+</g>
+<g id="baguette">
+  <g transform="rotate(-16 50 50)">
+    <rect x="14" y="42" width="72" height="18" rx="9"/>
+    <path d="M28 46l-4 10M40 44l-4 12M52 44l-4 12M64 45l-4 10M74 47l-3 8" stroke-width="3.2"/>
+  </g>
+</g>
+<g id="wine">
+  <path d="M30 18h20l-3 22a8 8 0 0 1-14 0z"/>
+  <path d="M40 48v22M32 72h16" stroke-width="3.2"/>
+  <path d="M62 24h14v10l4 8v34H58V42l4-8z"/>
+  <path d="M58 56h22" stroke-width="3.2"/>
+</g>
+<g id="arc">
+  <path d="M20 82V34h60v48"/>
+  <path d="M20 46h60" stroke-width="3.2"/>
+  <path d="M38 82V62a12 12 0 0 1 24 0v20" stroke-width="3.2"/>
+  <path d="M20 34 50 22l30 12" stroke-width="3.2"/>
+</g>
 
-    <!-- spain -->
-    <g id="paella">
-      <circle cx="50" cy="54" r="24"/>
-      <path d="M22 54H10M78 54h12"/>
-      <circle cx="43" cy="48" r="3"/>
-      <circle cx="57" cy="55" r="3"/>
-      <circle cx="49" cy="62" r="3"/>
-    </g>
-    <g id="guitar">
-      <circle cx="45" cy="65" r="18"/>
-      <circle cx="52" cy="43" r="12"/>
-      <circle cx="45" cy="65" r="6"/>
-      <path d="M58 34 74 18M64 22l8 8"/>
-    </g>
+<!-- ============ italy ============ -->
+<g id="pizza">
+  <path d="M50 18 22 74q26 12 56 0z"/>
+  <path d="M22 74q26 12 56 0" stroke-width="4"/>
+  <circle cx="44" cy="52" r="5" stroke-width="3.2"/>
+  <circle cx="58" cy="62" r="5" stroke-width="3.2"/>
+  <circle cx="50" cy="36" r="4" stroke-width="3.2"/>
+</g>
+<g id="colosseum">
+  <path d="M20 46q30-14 60 0v32H20z"/>
+  <path d="M20 58h60M20 70h60" stroke-width="3.2"/>
+  <path d="M30 58v-8a5 5 0 0 1 10 0v8M46 56v-8a5 5 0 0 1 10 0v8M62 58v-6a5 5 0 0 1 10 0v6" stroke-width="2.6"/>
+</g>
+<g id="pisa">
+  <g transform="rotate(11 50 84)">
+    <path d="M38 84V24h24v60"/>
+    <path d="M38 36h24M38 48h24M38 60h24M38 72h24" stroke-width="2.6"/>
+    <path d="M32 84h36" stroke-width="4"/>
+    <path d="M41 24h18l-2-7H43z" stroke-width="3.2"/>
+  </g>
+</g>
+<g id="gondola">
+  <path d="M12 62h68q-8 14-34 14T12 62z"/>
+  <path d="M12 62q0-8 8-10" stroke-width="3.2"/>
+  <path d="M80 62V34q-8 2-8 10" stroke-width="3.2"/>
+  <path d="M30 58 44 44" stroke-width="3.2"/>
+</g>
+<g id="pasta">
+  <path d="M14 52h72q-4 28-36 28T14 52z"/>
+  <path d="M18 60h64" stroke-width="3.2"/>
+  <path d="M50 48V22M44 26h12M44 34h12" stroke-width="3.2"/>
+  <path d="M28 50q6-8 14-2t14-4 14 2" stroke-width="3.2"/>
+</g>
+<g id="gelato">
+  <path d="M34 44 50 88 66 44z"/>
+  <path d="M38 54h24M42 66h16" stroke-width="2.6"/>
+  <path d="M34 44q0-14 16-14t16 14z"/>
+  <circle cx="50" cy="24" r="5" stroke-width="3.2"/>
+</g>
 
-    <!-- croatia -->
-    <g id="sailboat">
-      <path d="M16 66h68q-8 12-34 12T16 66z"/>
-      <path d="M46 62V18L24 62zM54 62V30l22 32z"/>
-    </g>
-    <!-- usa -->
-    <g id="pine">
-      <path d="M50 18 34 44h32zM50 34 30 62h40zM50 50 26 80h48z"/>
-      <path d="M50 80v8"/>
-    </g>
-    <g id="star">
-      <path d="M50 18 60 42h26L65 58l8 25-23-16-23 16 8-25L14 42h26z"/>
-    </g>
-    <g id="boot">
-      <path d="M38 18h16v30l16 10v20H36q-2-30 2-60z"/>
-      <path d="M36 66h34"/>
-    </g>
-    <g id="cactus">
-      <path d="M50 84V26"/>
-      <path d="M50 56q-14 0-14-14v-8M50 66q14 0 14-16v-6"/>
-      <path d="M42 84h16"/>
-    </g>
-    <g id="palm">
-      <path d="M52 84q-4-26 0-44"/>
-      <path d="M52 40q-12-12-26-6M52 40q14-10 26 0M52 40q-6-14 4-20M52 40q10-8 20 2"/>
-    </g>
-    <g id="bridge">
-      <path d="M12 72h76"/>
-      <path d="M30 72V26M70 72V26"/>
-      <path d="M30 30q20 26 40 0"/>
-      <path d="M12 40 30 26M88 40 70 26"/>
-    </g>
-    <g id="mountains">
-      <path d="M12 76 38 32l16 26 10-14 28 32z"/>
-      <path d="M30 52h16"/>
-    </g>
+<!-- ============ spain ============ -->
+<g id="paella">
+  <circle cx="50" cy="52" r="26"/>
+  <circle cx="50" cy="52" r="18" stroke-width="2.6"/>
+  <path d="M24 52H14M76 52h10" stroke-width="4"/>
+  <path d="M42 48q8-8 14 0" stroke-width="3.2"/>
+  <circle cx="44" cy="60" r="3" stroke-width="2.6"/>
+  <circle cx="57" cy="58" r="3" stroke-width="2.6"/>
+</g>
+<g id="guitar">
+  <circle cx="44" cy="66" r="19"/>
+  <circle cx="52" cy="42" r="13"/>
+  <circle cx="44" cy="66" r="6" stroke-width="3.2"/>
+  <path d="M58 32 78 14" stroke-width="4"/>
+  <path d="M74 10l8 8-6 6" stroke-width="3.2"/>
+</g>
+<g id="fan">
+  <path d="M50 80 18 40q18-16 32-16t32 16z"/>
+  <path d="M50 80 32 46M50 80V40M50 80 68 46" stroke-width="3.2"/>
+  <path d="M26 50q24-14 48 0" stroke-width="2.6"/>
+</g>
 
-    <!-- travel -->
-    <g id="plane">
-      <path d="M14 48 84 22 60 78 46 56z"/>
-      <path d="M46 56 84 22"/>
-    </g>
-    <g id="suitcase">
-      <rect x="22" y="38" width="56" height="40" rx="6"/>
-      <path d="M40 38V28h20v10"/>
-      <path d="M38 38v40M62 38v40"/>
-    </g>
-    <g id="camera">
-      <rect x="18" y="36" width="64" height="42" rx="7"/>
-      <circle cx="50" cy="57" r="13"/>
-      <path d="M36 36l6-10h16l6 10"/>
-    </g>
-    <g id="compass">
-      <circle cx="50" cy="50" r="31"/>
-      <path d="M63 37 43 44l-6 19 20-7z"/>
-    </g>
-    <g id="globe">
-      <circle cx="50" cy="50" r="31"/>
-      <path d="M19 50h62"/>
-      <ellipse cx="50" cy="50" rx="14" ry="31"/>
-    </g>
-    <g id="coffee">
-      <path d="M24 42h40v20a14 14 0 0 1-14 14H38a14 14 0 0 1-14-14z"/>
-      <path d="M64 48h8a8 8 0 0 1 0 16h-8"/>
-      <path d="M36 32q0-6 5-10M50 32q0-6 5-10"/>
-    </g>
+<!-- ============ croatia ============ -->
+<g id="sailboat">
+  <path d="M14 66h72q-8 14-36 14T14 66z"/>
+  <path d="M46 62V16L22 62z"/>
+  <path d="M54 62V28l24 34z"/>
+</g>
+<g id="lighthouse">
+  <path d="M36 80 40 40h20l4 40z"/>
+  <path d="M38 56h24M39 68h22" stroke-width="3.2"/>
+  <path d="M36 40h28l-4-8H40z"/>
+  <path d="M46 32v-8h8v8" stroke-width="3.2"/>
+  <path d="M20 26l12 4M80 26l-12 4" stroke-width="2.6"/>
+</g>
+<g id="waves">
+  <path d="M12 40q12-10 24 0t24 0 26 0"/>
+  <path d="M12 58q12-10 24 0t24 0 26 0"/>
+  <path d="M12 76q12-10 24 0t24 0 26 0"/>
+</g>
+
+<!-- ============ texas ============ -->
+<g id="longhorn">
+  <path d="M34 42q0-16 16-16t16 16v10q0 16-16 22T34 54z"/>
+  <circle cx="43" cy="48" r="4" stroke-width="3.2"/>
+  <circle cx="57" cy="48" r="4" stroke-width="3.2"/>
+  <path d="M34 40Q14 32 6 16q16 2 28 14M66 40q20-8 28-24-16 2-28 14"/>
+  <path d="M45 68h10" stroke-width="3.2"/>
+</g>
+<g id="cowboyhat">
+  <path d="M32 58q0-32 18-32t18 32"/>
+  <path d="M30 50q20 9 40 0" stroke-width="3.2"/>
+  <path d="M10 62q14-7 40-7t40 7q-14 13-40 13T10 62z"/>
+</g>
+<g id="boot">
+  <path d="M36 16h18l2 32 16 10v20H34q-4-32 2-62z"/>
+  <path d="M34 68h38" stroke-width="3.2"/>
+  <path d="M38 30h16M38 42h18" stroke-width="2.6"/>
+  <circle cx="78" cy="82" r="5" stroke-width="2.6"/>
+</g>
+<g id="star">
+  <path d="M50 14 61 40h28L66 57l9 27-25-17-25 17 9-27L11 40h28z"/>
+</g>
+<g id="cactus">
+  <path d="M42 86V32a8 8 0 0 1 16 0v54z"/>
+  <path d="M42 58H30a8 8 0 0 1-8-8V38M58 66h12a8 8 0 0 0 8-8V44" stroke-width="4"/>
+  <path d="M36 86h28" stroke-width="3.2"/>
+  <circle cx="50" cy="26" r="5" stroke-width="3.2"/>
+</g>
+
+<!-- ============ oregon / colorado ============ -->
+<g id="pine">
+  <path d="M50 14 36 38h28z"/>
+  <path d="M50 30 30 58h40z"/>
+  <path d="M50 48 24 80h52z"/>
+  <path d="M50 80v8M42 88h16" stroke-width="3.2"/>
+</g>
+<g id="mountains">
+  <path d="M8 78 34 30l18 30 12-18 26 36z"/>
+  <path d="M26 48h16M58 48h12" stroke-width="3.2"/>
+</g>
+<g id="skis">
+  <path d="M34 84 26 22q0-6 6-6t6 6l-2 62" stroke-width="4"/>
+  <path d="M56 84 66 24q1-6 7-5t5 7l-12 58" stroke-width="4"/>
+  <path d="M14 30v54M18 30h-8" stroke-width="3.2"/>
+</g>
+<g id="balloon">
+  <path d="M50 16q26 0 26 26 0 18-26 34Q24 60 24 42 24 16 50 16z"/>
+  <path d="M50 16v60M32 24q-4 26 8 44M68 24q4 26-8 44" stroke-width="3.2"/>
+  <path d="M40 80h20l-2 10H42z" stroke-width="3.2"/>
+</g>
+
+<!-- ============ california ============ -->
+<g id="palm">
+  <path d="M54 88q-6-30-2-46"/>
+  <path d="M52 42Q34 26 16 34q16-2 22 4M52 42q18-14 34-4-16-2-24 6M52 42q-8-18 4-28-8 12-2 20"/>
+  <circle cx="46" cy="48" r="4" stroke-width="2.6"/>
+  <path d="M44 88h22" stroke-width="3.2"/>
+</g>
+<g id="bridge">
+  <path d="M8 70h84" stroke-width="4"/>
+  <path d="M28 70V22M72 70V22"/>
+  <path d="M28 26q22 28 44 0" stroke-width="3.2"/>
+  <path d="M8 42 28 24M92 42 72 24" stroke-width="3.2"/>
+  <path d="M38 40v22M48 48v14M62 40v22" stroke-width="2"/>
+</g>
+<g id="surf">
+  <g transform="rotate(24 50 50)">
+    <path d="M50 8q16 22 16 42T50 92Q34 70 34 50T50 8z"/>
+    <path d="M50 20v54" stroke-width="2.6"/>
+    <path d="M50 74l-7 14h14z" stroke-width="3.2"/>
+  </g>
+</g>
+
+<!-- ============ travel ============ -->
+<g id="plane">
+  <path d="M10 54 88 30q6-2 6 4t-6 6L54 54 40 82l-8 2 2-24z"/>
+  <path d="M34 60 12 74l2 8 22-12" stroke-width="3.2"/>
+</g>
+<g id="suitcase">
+  <rect x="18" y="36" width="64" height="44" rx="7"/>
+  <path d="M38 36V26h24v10" stroke-width="3.2"/>
+  <path d="M34 36v44M66 36v44" stroke-width="3.2"/>
+  <path d="M46 60h8v10h-8z" stroke-width="2.6"/>
+</g>
+<g id="camera">
+  <rect x="12" y="34" width="76" height="46" rx="8"/>
+  <circle cx="50" cy="57" r="16"/>
+  <circle cx="50" cy="57" r="8" stroke-width="3.2"/>
+  <path d="M32 34l6-10h24l6 10" stroke-width="3.2"/>
+  <circle cx="76" cy="44" r="3.4" stroke-width="2.6"/>
+</g>
+<g id="compass">
+  <circle cx="50" cy="50" r="33"/>
+  <circle cx="50" cy="50" r="25" stroke-width="2.6"/>
+  <path d="M64 36 44 44l-8 20 20-8z" stroke-width="3.2"/>
+</g>
+<g id="globe">
+  <circle cx="50" cy="50" r="33"/>
+  <path d="M17 50h66" stroke-width="3.2"/>
+  <ellipse cx="50" cy="50" rx="15" ry="33" stroke-width="3.2"/>
+  <path d="M24 32q26 10 52 0M24 68q26-10 52 0" stroke-width="2.6"/>
+</g>
+<g id="passport">
+  <rect x="24" y="16" width="52" height="68" rx="6"/>
+  <path d="M30 16v68" stroke-width="2.6"/>
+  <circle cx="54" cy="40" r="10" stroke-width="3.2"/>
+  <path d="M42 60h24M42 70h24" stroke-width="2.6"/>
+</g>
+<g id="map">
+  <path d="M12 28 36 20l28 8 24-8v52l-24 8-28-8-24 8z"/>
+  <path d="M36 20v52M64 28v52" stroke-width="2.6"/>
+  <path d="M62 36a8 8 0 0 0-8 8q0 8 8 14 8-6 8-14a8 8 0 0 0-8-8z" stroke-width="3.2"/>
+</g>
+<g id="backpack">
+  <path d="M24 44q0-20 26-20t26 20v36H24z"/>
+  <path d="M24 56q26 10 52 0" stroke-width="3.2"/>
+  <path d="M38 24q0-10 12-10t12 10" stroke-width="3.2"/>
+  <path d="M40 66h20v14H40z" stroke-width="2.6"/>
+</g>
+<g id="glasses">
+  <circle cx="28" cy="52" r="16"/>
+  <circle cx="72" cy="52" r="16"/>
+  <path d="M44 50h12" stroke-width="3.2"/>
+  <path d="M12 48 4 36M88 48l8-12" stroke-width="3.2"/>
+</g>
+<g id="coffee">
+  <path d="M24 40h44v22a16 16 0 0 1-16 16H40a16 16 0 0 1-16-16z"/>
+  <path d="M68 46h8a9 9 0 0 1 0 18h-8" stroke-width="3.2"/>
+  <path d="M24 52h44" stroke-width="3.2"/>
+  <path d="M36 30q0-7 5-11M50 30q0-7 5-11" stroke-width="2.6"/>
+</g>
+<g id="ticket">
+  <path d="M12 36h76v12a6 6 0 0 0 0 12v12H12V60a6 6 0 0 0 0-12z"/>
+  <path d="M62 36v36" stroke-width="2" stroke-dasharray="5 5"/>
+  <path d="M22 48h28M22 58h20" stroke-width="2.6"/>
+</g>
+<g id="signpost">
+  <path d="M50 88V22"/>
+  <path d="M50 30h32l-9 11H50zM50 50H20l9 11h21z" stroke-width="3.2"/>
+</g>
+<g id="sun">
+  <circle cx="50" cy="50" r="18"/>
+  <path d="M50 20V10M50 80v10M20 50H10M80 50h10M28 28l-7-7M72 28l7-7M28 72l-7 7M72 72l7 7" stroke-width="4"/>
+</g>
+<g id="cloud">
+  <path d="M28 70q-14 0-14-12t14-12q2-16 18-16t18 14q14 0 14 13t-14 13z"/>
+</g>
+
+<!-- ============ filler marks ============ -->
+<g id="f-dot"><circle cx="50" cy="50" r="10" fill="#101828" stroke="none"/></g>
+<g id="f-ring"><circle cx="50" cy="50" r="17" stroke-width="7"/></g>
+<g id="f-star"><path d="M50 24 58 43l20 2-15 13 5 19-18-11-18 11 5-19-15-13 20-2z" stroke-width="7"/></g>
+<g id="f-spark"><path d="M50 18v26M50 56v26M18 50h26M56 50h26" stroke-width="8"/></g>
+<g id="f-heart"><path d="M50 80Q20 58 20 41a15 15 0 0 1 30-6 15 15 0 0 1 30 6q0 17-30 39z" stroke-width="7"/></g>
+<g id="f-tri"><path d="M50 24 78 74H22z" stroke-width="7"/></g>
+<g id="f-arc"><path d="M24 42q26 28 52 0" stroke-width="8"/></g>
+<g id="f-plus"><path d="M50 26v48M26 50h48" stroke-width="8"/></g>
+<g id="f-x"><path d="M30 30 70 70M70 30 30 70" stroke-width="8"/></g>
+<g id="f-diamond"><path d="M50 24 74 50 50 76 26 50z" stroke-width="7"/></g>
+
   </defs>
 
   <g fill="none" stroke="#101828" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-    <!-- row 1 -->
-    <use href="#soccer"    transform="translate(58 54)   rotate(-8)  scale(.6) translate(-50 -50)"/>
-    <use href="#nigiri"    transform="translate(186 66)  rotate(6)   scale(.62) translate(-50 -50)"/>
-    <use href="#eiffel"    transform="translate(302 50)  rotate(-4)  scale(.58) translate(-50 -50)"/>
-    <use href="#pine"      transform="translate(430 62)  rotate(5)   scale(.6) translate(-50 -50)"/>
-    <use href="#star"      transform="translate(548 48)  rotate(-10) scale(.55) translate(-50 -50)"/>
-    <use href="#camera"    transform="translate(666 64)  rotate(7)   scale(.58) translate(-50 -50)"/>
-
-    <!-- row 2 -->
-    <use href="#plane"     transform="translate(46 178)  rotate(10)  scale(.6) translate(-50 -50)"/>
-    <use href="#maki"      transform="translate(172 190) rotate(-6)  scale(.58) translate(-50 -50)"/>
-    <use href="#torii"     transform="translate(300 174) rotate(4)   scale(.6) translate(-50 -50)"/>
-    <use href="#mountains" transform="translate(422 188) rotate(-5)  scale(.62) translate(-50 -50)"/>
-    <use href="#boot"      transform="translate(546 176) rotate(9)   scale(.56) translate(-50 -50)"/>
-    <use href="#wine"      transform="translate(668 190) rotate(-7)  scale(.56) translate(-50 -50)"/>
-
-    <!-- row 3 -->
-    <use href="#basket"    transform="translate(62 302)  rotate(6)   scale(.6) translate(-50 -50)"/>
-    <use href="#pizza"     transform="translate(180 292) rotate(-9)  scale(.6) translate(-50 -50)"/>
-    <use href="#fuji"      transform="translate(308 306) rotate(3)   scale(.62) translate(-50 -50)"/>
-    <use href="#palm"      transform="translate(430 294) rotate(-4)  scale(.6) translate(-50 -50)"/>
-    <use href="#cactus"    transform="translate(552 306) rotate(8)   scale(.58) translate(-50 -50)"/>
-    <use href="#compass"   transform="translate(664 292) rotate(-6)  scale(.58) translate(-50 -50)"/>
-
-    <!-- row 4 -->
-    <use href="#suitcase"  transform="translate(50 420)  rotate(-7)  scale(.58) translate(-50 -50)"/>
-    <use href="#croissant" transform="translate(176 432) rotate(8)   scale(.6) translate(-50 -50)"/>
-    <use href="#pagoda"    transform="translate(302 416) rotate(-3)  scale(.6) translate(-50 -50)"/>
-    <use href="#bridge"    transform="translate(426 430) rotate(4)   scale(.62) translate(-50 -50)"/>
-    <use href="#paella"    transform="translate(548 418) rotate(-8)  scale(.58) translate(-50 -50)"/>
-    <use href="#globe"     transform="translate(670 432) rotate(6)   scale(.56) translate(-50 -50)"/>
-
-    <!-- row 5 -->
-    <use href="#chopsticks" transform="translate(56 542)  rotate(5)   scale(.58) translate(-50 -50)"/>
-    <use href="#dumpling"   transform="translate(184 552) rotate(-6)  scale(.6) translate(-50 -50)"/>
-    <use href="#colosseum"  transform="translate(306 538) rotate(3)   scale(.6) translate(-50 -50)"/>
-    <use href="#sailboat"   transform="translate(428 552) rotate(-5)  scale(.62) translate(-50 -50)"/>
-    <use href="#guitar"     transform="translate(550 540) rotate(10)  scale(.58) translate(-50 -50)"/>
-    <use href="#coffee"     transform="translate(668 554) rotate(-7)  scale(.56) translate(-50 -50)"/>
+    <use href="#guitar" transform="translate(845.4 397.8) rotate(-9) scale(0.531) translate(-50 -50)"/>
+    <use href="#colosseum" transform="translate(106.8 120.6) rotate(-9.9) scale(0.39) translate(-50 -50)"/>
+    <use href="#panda" transform="translate(480 508) rotate(-12.8) scale(0.5) translate(-50 -50)"/>
+    <use href="#torii" transform="translate(392.1 611.3) rotate(15.7) scale(0.53) translate(-50 -50)"/>
+    <use href="#passport" transform="translate(555.9 457) rotate(15.9) scale(0.522) translate(-50 -50)"/>
+    <use href="#backpack" transform="translate(118.3 441.9) rotate(-14.5) scale(0.5) translate(-50 -50)"/>
+    <use href="#pisa" transform="translate(54.4 262.9) rotate(9.9) scale(0.432) translate(-50 -50)"/>
+    <use href="#arc" transform="translate(542.4 618.4) rotate(4.8) scale(0.367) translate(-50 -50)"/>
+    <use href="#trophy" transform="translate(305.6 508.7) rotate(7.5) scale(0.517) translate(-50 -50)"/>
+    <use href="#map" transform="translate(807.4 675.2) rotate(6) scale(0.361) translate(-50 -50)"/>
+    <use href="#gelato" transform="translate(822.2 372.2) rotate(21.7) scale(0.446) translate(-50 -50)"/>
+    <use href="#cloud" transform="translate(182.4 696.5) rotate(10.6) scale(0.478) translate(-50 -50)"/>
+    <use href="#plane" transform="translate(519.2 393.4) rotate(-5.8) scale(0.422) translate(-50 -50)"/>
+    <use href="#compass" transform="translate(704.6 173.7) rotate(-14.6) scale(0.423) translate(-50 -50)"/>
+    <use href="#palm" transform="translate(608.8 545.2) rotate(-10.1) scale(0.598) translate(-50 -50)"/>
+    <use href="#paella" transform="translate(828.6 545.9) rotate(5.8) scale(0.637) translate(-50 -50)"/>
+    <use href="#sake" transform="translate(696.7 805.1) rotate(12.7) scale(0.357) translate(-50 -50)"/>
+    <use href="#croissant" transform="translate(516.2 739.8) rotate(5.7) scale(0.335) translate(-50 -50)"/>
+    <use href="#dumpling" transform="translate(216.8 291.6) rotate(9.9) scale(0.477) translate(-50 -50)"/>
+    <use href="#whistle" transform="translate(335.4 703.1) rotate(6.4) scale(0.416) translate(-50 -50)"/>
+    <use href="#pasta" transform="translate(121 828.3) rotate(22.4) scale(0.469) translate(-50 -50)"/>
+    <use href="#cactus" transform="translate(403.9 700.2) rotate(14.5) scale(0.41) translate(-50 -50)"/>
+    <use href="#pizza" transform="translate(132.8 861.8) rotate(-7.1) scale(0.467) translate(-50 -50)"/>
+    <use href="#fuji" transform="translate(546.9 282.1) rotate(-4.7) scale(0.48) translate(-50 -50)"/>
+    <use href="#glasses" transform="translate(-31.5 544.2) rotate(-21.6) scale(0.513) translate(-50 -50)"/>
+    <use href="#glasses" transform="translate(868.5 544.2) rotate(-21.6) scale(0.513) translate(-50 -50)"/>
+    <use href="#onigiri" transform="translate(-25.7 188.2) rotate(3.7) scale(0.409) translate(-50 -50)"/>
+    <use href="#onigiri" transform="translate(874.3 188.2) rotate(3.7) scale(0.409) translate(-50 -50)"/>
+    <use href="#baguette" transform="translate(771.1 178.7) rotate(-22.1) scale(0.368) translate(-50 -50)"/>
+    <use href="#sailboat" transform="translate(42 99.4) rotate(13.7) scale(0.429) translate(-50 -50)"/>
+    <use href="#surf" transform="translate(-20.2 233.6) rotate(11.1) scale(0.456) translate(-50 -50)"/>
+    <use href="#surf" transform="translate(879.8 233.6) rotate(11.1) scale(0.456) translate(-50 -50)"/>
+    <use href="#lighthouse" transform="translate(240.4 813.6) rotate(8.6) scale(0.355) translate(-50 -50)"/>
+    <use href="#sun" transform="translate(416.5 -37.1) rotate(-2.6) scale(0.527) translate(-50 -50)"/>
+    <use href="#sun" transform="translate(416.5 862.9) rotate(-2.6) scale(0.527) translate(-50 -50)"/>
+    <use href="#coffee" transform="translate(475.3 184.7) rotate(15.4) scale(0.418) translate(-50 -50)"/>
+    <use href="#gondola" transform="translate(176.1 797.7) rotate(18.2) scale(0.394) translate(-50 -50)"/>
+    <use href="#pagoda" transform="translate(669.7 794.7) rotate(-6.3) scale(0.321) translate(-50 -50)"/>
+    <use href="#maki" transform="translate(423.2 74.5) rotate(17.3) scale(0.527) translate(-50 -50)"/>
+    <use href="#bridge" transform="translate(830.8 283) rotate(16.2) scale(0.59) translate(-50 -50)"/>
+    <use href="#jersey" transform="translate(384.1 129.9) rotate(10.3) scale(0.424) translate(-50 -50)"/>
+    <use href="#pine" transform="translate(460.7 341.1) rotate(-5.8) scale(0.398) translate(-50 -50)"/>
+    <use href="#nigiri" transform="translate(-5.4 701.3) rotate(22.8) scale(0.451) translate(-50 -50)"/>
+    <use href="#nigiri" transform="translate(894.6 701.3) rotate(22.8) scale(0.451) translate(-50 -50)"/>
+    <use href="#star" transform="translate(577.7 405.6) rotate(-7.4) scale(0.66) translate(-50 -50)"/>
+    <use href="#eiffel" transform="translate(721.7 588.9) rotate(3) scale(0.4) translate(-50 -50)"/>
+    <use href="#balloon" transform="translate(564.6 821.3) rotate(6.8) scale(0.336) translate(-50 -50)"/>
+    <use href="#mountains" transform="translate(592.1 660) rotate(-19.7) scale(0.397) translate(-50 -50)"/>
+    <use href="#boot" transform="translate(585.6 233.8) rotate(-1.4) scale(0.382) translate(-50 -50)"/>
+    <use href="#fan" transform="translate(241 636.5) rotate(23.3) scale(0.639) translate(-50 -50)"/>
+    <use href="#suitcase" transform="translate(749 528.4) rotate(17.6) scale(0.473) translate(-50 -50)"/>
+    <use href="#lantern" transform="translate(39.5 840.3) rotate(19.9) scale(0.661) translate(-50 -50)"/>
+    <use href="#lantern" transform="translate(939.5 840.3) rotate(19.9) scale(0.661) translate(-50 -50)"/>
+    <use href="#soccer" transform="translate(216.7 444.1) rotate(-5.2) scale(0.453) translate(-50 -50)"/>
+    <use href="#cowboyhat" transform="translate(841.2 114.2) rotate(-7.1) scale(0.537) translate(-50 -50)"/>
+    <use href="#ticket" transform="translate(719.7 -21.4) rotate(-0.6) scale(0.653) translate(-50 -50)"/>
+    <use href="#ticket" transform="translate(719.7 878.6) rotate(-0.6) scale(0.653) translate(-50 -50)"/>
+    <use href="#wine" transform="translate(740.1 355.8) rotate(13.5) scale(0.366) translate(-50 -50)"/>
+    <use href="#camera" transform="translate(508 478.9) rotate(-6.9) scale(0.535) translate(-50 -50)"/>
+    <use href="#globe" transform="translate(185.5 575.1) rotate(-3) scale(0.47) translate(-50 -50)"/>
+    <use href="#longhorn" transform="translate(63.9 476.8) rotate(-9.1) scale(0.342) translate(-50 -50)"/>
+    <use href="#signpost" transform="translate(533.2 510.9) rotate(9) scale(0.427) translate(-50 -50)"/>
+    <use href="#basket" transform="translate(685.7 -28.4) rotate(10.1) scale(0.412) translate(-50 -50)"/>
+    <use href="#basket" transform="translate(685.7 871.6) rotate(10.1) scale(0.412) translate(-50 -50)"/>
+    <use href="#waves" transform="translate(455.3 821.6) rotate(-22.2) scale(0.383) translate(-50 -50)"/>
+    <use href="#chopsticks" transform="translate(442.4 678.9) rotate(-16) scale(0.527) translate(-50 -50)"/>
+    <use href="#ramen" transform="translate(817.8 830.6) rotate(-16.8) scale(0.483) translate(-50 -50)"/>
+    <use href="#skis" transform="translate(512.6 -28.1) rotate(16.3) scale(0.509) translate(-50 -50)"/>
+    <use href="#skis" transform="translate(512.6 871.9) rotate(16.3) scale(0.509) translate(-50 -50)"/>
+    <use href="#basket" transform="translate(301.9 385.9) rotate(18.2) scale(0.443) translate(-50 -50)"/>
+    <use href="#suitcase" transform="translate(185.3 -10.6) rotate(23.8) scale(0.416) translate(-50 -50)"/>
+    <use href="#suitcase" transform="translate(185.3 889.4) rotate(23.8) scale(0.416) translate(-50 -50)"/>
+    <use href="#cloud" transform="translate(785.8 451.7) rotate(3.8) scale(0.557) translate(-50 -50)"/>
+    <use href="#globe" transform="translate(395.2 67.5) rotate(19.9) scale(0.484) translate(-50 -50)"/>
+    <use href="#nigiri" transform="translate(132.6 374.6) rotate(-15.9) scale(0.531) translate(-50 -50)"/>
+    <use href="#signpost" transform="translate(643.1 97) rotate(7.9) scale(0.498) translate(-50 -50)"/>
+    <use href="#soccer" transform="translate(292.2 612.6) rotate(11.8) scale(0.632) translate(-50 -50)"/>
+    <use href="#plane" transform="translate(240 44.9) rotate(-9.1) scale(0.464) translate(-50 -50)"/>
+    <use href="#baguette" transform="translate(5.4 62.1) rotate(-2.5) scale(0.368) translate(-50 -50)"/>
+    <use href="#baguette" transform="translate(905.4 62.1) rotate(-2.5) scale(0.368) translate(-50 -50)"/>
+    <use href="#jersey" transform="translate(581.7 339.2) rotate(-12.1) scale(0.607) translate(-50 -50)"/>
+    <use href="#coffee" transform="translate(19.8 322.8) rotate(20.9) scale(0.627) translate(-50 -50)"/>
+    <use href="#coffee" transform="translate(919.8 322.8) rotate(20.9) scale(0.627) translate(-50 -50)"/>
+    <use href="#boot" transform="translate(240.5 564.4) rotate(11.7) scale(0.525) translate(-50 -50)"/>
+    <use href="#mountains" transform="translate(649 218.6) rotate(21.5) scale(0.424) translate(-50 -50)"/>
+    <use href="#whistle" transform="translate(285.1 296) rotate(-23.6) scale(0.519) translate(-50 -50)"/>
+    <use href="#bridge" transform="translate(30.5 394.9) rotate(7.9) scale(0.382) translate(-50 -50)"/>
+    <use href="#maki" transform="translate(219 97.9) rotate(6.4) scale(0.615) translate(-50 -50)"/>
+    <use href="#pagoda" transform="translate(508.5 136.8) rotate(-3.6) scale(0.48) translate(-50 -50)"/>
+    <use href="#cowboyhat" transform="translate(341.8 833) rotate(-4.4) scale(0.505) translate(-50 -50)"/>
+    <use href="#palm" transform="translate(83 724) rotate(17.4) scale(0.561) translate(-50 -50)"/>
+    <use href="#surf" transform="translate(332.5 45.6) rotate(0.7) scale(0.527) translate(-50 -50)"/>
+    <use href="#lantern" transform="translate(845.7 578.9) rotate(-19) scale(0.459) translate(-50 -50)"/>
+    <use href="#wine" transform="translate(638.9 648.3) rotate(11.1) scale(0.493) translate(-50 -50)"/>
+    <use href="#gelato" transform="translate(680.6 525.4) rotate(3.3) scale(0.4) translate(-50 -50)"/>
+    <use href="#fuji" transform="translate(818.7 584) rotate(-21.3) scale(0.508) translate(-50 -50)"/>
+    <use href="#dumpling" transform="translate(798.4 53.6) rotate(-14.6) scale(0.407) translate(-50 -50)"/>
+    <use href="#longhorn" transform="translate(246.4 263.2) rotate(11.6) scale(0.63) translate(-50 -50)"/>
+    <use href="#lighthouse" transform="translate(92.1 637.1) rotate(-9.6) scale(0.378) translate(-50 -50)"/>
+    <use href="#map" transform="translate(844.9 675.5) rotate(15.9) scale(0.397) translate(-50 -50)"/>
+    <use href="#pisa" transform="translate(607.2 747.1) rotate(23.5) scale(0.484) translate(-50 -50)"/>
+    <use href="#colosseum" transform="translate(63.6 635.9) rotate(22.1) scale(0.645) translate(-50 -50)"/>
+    <use href="#ticket" transform="translate(414.4 482.5) rotate(12.5) scale(0.452) translate(-50 -50)"/>
+    <use href="#waves" transform="translate(684 693.1) rotate(12.3) scale(0.619) translate(-50 -50)"/>
+    <use href="#ramen" transform="translate(516.6 252.6) rotate(23.8) scale(0.445) translate(-50 -50)"/>
+    <use href="#pizza" transform="translate(630.2 203.1) rotate(7.8) scale(0.434) translate(-50 -50)"/>
+    <use href="#guitar" transform="translate(728.9 319.4) rotate(23.2) scale(0.593) translate(-50 -50)"/>
+    <use href="#onigiri" transform="translate(537.7 46.5) rotate(3.1) scale(0.456) translate(-50 -50)"/>
+    <use href="#glasses" transform="translate(156.2 50.6) rotate(-11) scale(0.452) translate(-50 -50)"/>
+    <use href="#sun" transform="translate(365 635.7) rotate(-23.3) scale(0.327) translate(-50 -50)"/>
+    <use href="#balloon" transform="translate(91.5 491.1) rotate(21.7) scale(0.422) translate(-50 -50)"/>
+    <use href="#sailboat" transform="translate(667.8 332.8) rotate(4.7) scale(0.658) translate(-50 -50)"/>
+    <use href="#passport" transform="translate(855.1 834.3) rotate(23.6) scale(0.365) translate(-50 -50)"/>
+    <use href="#skis" transform="translate(363.9 149.3) rotate(-10.3) scale(0.414) translate(-50 -50)"/>
+    <use href="#fan" transform="translate(351.4 276.2) rotate(-1.7) scale(0.476) translate(-50 -50)"/>
+    <use href="#cactus" transform="translate(836.3 65.3) rotate(-10.4) scale(0.59) translate(-50 -50)"/>
+    <use href="#gondola" transform="translate(755.3 10.9) rotate(-7.8) scale(0.557) translate(-50 -50)"/>
+    <use href="#gondola" transform="translate(755.3 910.9) rotate(-7.8) scale(0.557) translate(-50 -50)"/>
+    <use href="#panda" transform="translate(655.7 558.6) rotate(9.1) scale(0.382) translate(-50 -50)"/>
+    <use href="#pasta" transform="translate(681.5 468.4) rotate(2.6) scale(0.526) translate(-50 -50)"/>
+    <use href="#camera" transform="translate(779.4 259.9) rotate(-7.8) scale(0.476) translate(-50 -50)"/>
+    <use href="#sake" transform="translate(6.9 600.8) rotate(-6.6) scale(0.413) translate(-50 -50)"/>
+    <use href="#sake" transform="translate(906.9 600.8) rotate(-6.6) scale(0.413) translate(-50 -50)"/>
+    <use href="#star" transform="translate(634.7 60.4) rotate(1.9) scale(0.431) translate(-50 -50)"/>
+    <use href="#trophy" transform="translate(28.7 730.2) rotate(8.9) scale(0.534) translate(-50 -50)"/>
+    <use href="#trophy" transform="translate(928.7 730.2) rotate(8.9) scale(0.534) translate(-50 -50)"/>
+    <use href="#paella" transform="translate(21.1 518) rotate(-2.3) scale(0.452) translate(-50 -50)"/>
+    <use href="#paella" transform="translate(921.1 518) rotate(-2.3) scale(0.452) translate(-50 -50)"/>
+    <use href="#compass" transform="translate(76.1 311.6) rotate(0) scale(0.323) translate(-50 -50)"/>
+    <use href="#croissant" transform="translate(186.1 337.1) rotate(-23.5) scale(0.52) translate(-50 -50)"/>
+    <use href="#chopsticks" transform="translate(5.1 828.9) rotate(19.9) scale(0.572) translate(-50 -50)"/>
+    <use href="#chopsticks" transform="translate(905.1 828.9) rotate(19.9) scale(0.572) translate(-50 -50)"/>
+    <use href="#eiffel" transform="translate(618.9 0.3) rotate(7.5) scale(0.582) translate(-50 -50)"/>
+    <use href="#eiffel" transform="translate(618.9 900.3) rotate(7.5) scale(0.582) translate(-50 -50)"/>
+    <use href="#torii" transform="translate(802 -21.4) rotate(19.6) scale(0.514) translate(-50 -50)"/>
+    <use href="#torii" transform="translate(802 878.6) rotate(19.6) scale(0.514) translate(-50 -50)"/>
+    <use href="#pine" transform="translate(159.6 529.4) rotate(13.5) scale(0.473) translate(-50 -50)"/>
+    <use href="#backpack" transform="translate(415.9 27.4) rotate(-10.3) scale(0.39) translate(-50 -50)"/>
+    <use href="#backpack" transform="translate(415.9 927.4) rotate(-10.3) scale(0.39) translate(-50 -50)"/>
+    <use href="#arc" transform="translate(400.1 345.1) rotate(-13.7) scale(0.383) translate(-50 -50)"/>
+    <use href="#sun" transform="translate(278.1 775.3) rotate(1.7) scale(0.512) translate(-50 -50)"/>
+    <use href="#gondola" transform="translate(764.1 130.2) rotate(-21.3) scale(0.538) translate(-50 -50)"/>
+    <use href="#cloud" transform="translate(73.5 590) rotate(-7.4) scale(0.425) translate(-50 -50)"/>
+    <use href="#lantern" transform="translate(18.6 191.1) rotate(-4.4) scale(0.425) translate(-50 -50)"/>
+    <use href="#lantern" transform="translate(918.6 191.1) rotate(-4.4) scale(0.425) translate(-50 -50)"/>
+    <use href="#trophy" transform="translate(278.1 245) rotate(21) scale(0.637) translate(-50 -50)"/>
+    <use href="#balloon" transform="translate(484.4 263.8) rotate(7.4) scale(0.449) translate(-50 -50)"/>
+    <use href="#skis" transform="translate(744.2 634) rotate(-21.2) scale(0.368) translate(-50 -50)"/>
+    <use href="#passport" transform="translate(153.1 210.2) rotate(-15.3) scale(0.364) translate(-50 -50)"/>
+    <use href="#map" transform="translate(599.4 71.8) rotate(-19.2) scale(0.368) translate(-50 -50)"/>
+    <use href="#baguette" transform="translate(728 752.9) rotate(-10.7) scale(0.45) translate(-50 -50)"/>
+    <use href="#longhorn" transform="translate(704.7 457) rotate(-16.1) scale(0.448) translate(-50 -50)"/>
+    <use href="#plane" transform="translate(467.9 445.6) rotate(-22.2) scale(0.36) translate(-50 -50)"/>
+    <use href="#dumpling" transform="translate(742 208.3) rotate(10) scale(0.476) translate(-50 -50)"/>
+    <use href="#cowboyhat" transform="translate(97.3 192.6) rotate(2.7) scale(0.33) translate(-50 -50)"/>
+    <use href="#coffee" transform="translate(505.4 174.5) rotate(2.4) scale(0.436) translate(-50 -50)"/>
+    <use href="#signpost" transform="translate(685.2 392.6) rotate(6.8) scale(0.551) translate(-50 -50)"/>
+    <use href="#guitar" transform="translate(421.6 389) rotate(-12.9) scale(0.357) translate(-50 -50)"/>
+    <use href="#ticket" transform="translate(379.8 779.2) rotate(-1.6) scale(0.336) translate(-50 -50)"/>
+    <use href="#croissant" transform="translate(146.8 172.8) rotate(-18.7) scale(0.549) translate(-50 -50)"/>
+    <use href="#torii" transform="translate(745.2 114.4) rotate(15.5) scale(0.362) translate(-50 -50)"/>
+    <use href="#fan" transform="translate(619.8 164.7) rotate(5.8) scale(0.436) translate(-50 -50)"/>
+    <use href="#fuji" transform="translate(408.7 -8.3) rotate(-10.3) scale(0.562) translate(-50 -50)"/>
+    <use href="#fuji" transform="translate(408.7 891.7) rotate(-10.3) scale(0.562) translate(-50 -50)"/>
+    <use href="#nigiri" transform="translate(228.3 524.8) rotate(1.4) scale(0.401) translate(-50 -50)"/>
+    <use href="#pisa" transform="translate(338.2 628.2) rotate(20.4) scale(0.513) translate(-50 -50)"/>
+    <use href="#panda" transform="translate(778.3 751.8) rotate(-5.2) scale(0.369) translate(-50 -50)"/>
+    <use href="#eiffel" transform="translate(-15.7 791.9) rotate(-19.3) scale(0.501) translate(-50 -50)"/>
+    <use href="#eiffel" transform="translate(884.3 791.9) rotate(-19.3) scale(0.501) translate(-50 -50)"/>
+    <use href="#glasses" transform="translate(348.1 357.8) rotate(-18.4) scale(0.662) translate(-50 -50)"/>
+    <use href="#wine" transform="translate(439.9 608.4) rotate(21.3) scale(0.461) translate(-50 -50)"/>
+    <use href="#compass" transform="translate(268.5 178.2) rotate(-1.5) scale(0.335) translate(-50 -50)"/>
+    <use href="#gelato" transform="translate(238 -15.1) rotate(-11.6) scale(0.321) translate(-50 -50)"/>
+    <use href="#gelato" transform="translate(238 884.9) rotate(-11.6) scale(0.321) translate(-50 -50)"/>
+    <use href="#pizza" transform="translate(169.9 411.7) rotate(11.1) scale(0.547) translate(-50 -50)"/>
+    <use href="#basket" transform="translate(96.1 258.3) rotate(-12.4) scale(0.352) translate(-50 -50)"/>
+    <use href="#surf" transform="translate(617.5 840.1) rotate(17.4) scale(0.533) translate(-50 -50)"/>
+    <use href="#palm" transform="translate(171.9 655.2) rotate(-15.1) scale(0.335) translate(-50 -50)"/>
+    <use href="#onigiri" transform="translate(84.4 44.5) rotate(-21.4) scale(0.51) translate(-50 -50)"/>
+    <use href="#backpack" transform="translate(270.8 719.7) rotate(16.5) scale(0.413) translate(-50 -50)"/>
+    <use href="#bridge" transform="translate(585.1 572.4) rotate(-12.2) scale(0.358) translate(-50 -50)"/>
+    <use href="#pagoda" transform="translate(335.8 443.8) rotate(-5.1) scale(0.342) translate(-50 -50)"/>
+    <use href="#camera" transform="translate(163.5 484.2) rotate(5.4) scale(0.533) translate(-50 -50)"/>
+    <use href="#star" transform="translate(407.5 529.6) rotate(-5.9) scale(0.374) translate(-50 -50)"/>
+    <use href="#maki" transform="translate(341.1 131.5) rotate(-2.5) scale(0.331) translate(-50 -50)"/>
+    <use href="#globe" transform="translate(442.2 724.6) rotate(-6.2) scale(0.536) translate(-50 -50)"/>
+    <use href="#pine" transform="translate(488.8 691.1) rotate(20.9) scale(0.453) translate(-50 -50)"/>
+    <use href="#soccer" transform="translate(499.8 826.7) rotate(19.5) scale(0.345) translate(-50 -50)"/>
+    <use href="#paella" transform="translate(834.2 440.1) rotate(3.8) scale(0.325) translate(-50 -50)"/>
+    <use href="#suitcase" transform="translate(147.1 80.3) rotate(3.6) scale(0.356) translate(-50 -50)"/>
+    <use href="#whistle" transform="translate(299.1 183.5) rotate(-17.9) scale(0.53) translate(-50 -50)"/>
+    <use href="#jersey" transform="translate(224.6 373.4) rotate(-21.3) scale(0.426) translate(-50 -50)"/>
+    <use href="#lighthouse" transform="translate(769.9 297.4) rotate(5.1) scale(0.508) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(730.7 379.6) rotate(-22.9) scale(0.187) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(268.2 670.2) rotate(38.5) scale(0.103) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(654 -3.7) rotate(-15.9) scale(0.148) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(654 896.3) rotate(-15.9) scale(0.148) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(786.8 600) rotate(-41.4) scale(0.091) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(623.5 323.9) rotate(-39.2) scale(0.106) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(540 789.8) rotate(8.7) scale(0.219) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(834.7 752.6) rotate(-0.4) scale(0.094) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(445.9 17) rotate(-44.5) scale(0.247) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(445.9 917) rotate(-44.5) scale(0.247) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(545.3 388.6) rotate(-41.1) scale(0.093) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(330.4 679) rotate(-13.8) scale(0.169) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(104.6 859.5) rotate(-16.1) scale(0.178) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(627.5 236) rotate(44.3) scale(0.166) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(186.5 378.2) rotate(32.1) scale(0.098) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(149.8 446.2) rotate(39) scale(0.181) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(219 707.3) rotate(18.5) scale(0.156) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(382.2 435.6) rotate(28) scale(0.11) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(391.6 39.2) rotate(-17.7) scale(0.174) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(764.4 649) rotate(2.4) scale(0.096) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(203.9 616.4) rotate(17.1) scale(0.164) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(1.3 281.7) rotate(13.8) scale(0.256) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(901.3 281.7) rotate(13.8) scale(0.256) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(862 85.2) rotate(-20.3) scale(0.161) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(541.1 208.7) rotate(34.4) scale(0.088) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(85 140.9) rotate(-44.2) scale(0.089) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(761.8 225.4) rotate(18.2) scale(0.092) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(15.1 443.9) rotate(20) scale(0.087) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(582.2 601.9) rotate(-7.6) scale(0.173) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(779 814.8) rotate(6.8) scale(0.216) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(518.4 617.7) rotate(-10.4) scale(0.131) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(426.1 547.6) rotate(-25.3) scale(0.257) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(621 727.1) rotate(38.2) scale(0.098) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(137.6 -3.6) rotate(19.1) scale(0.123) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(137.6 896.4) rotate(19.1) scale(0.123) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(412.1 669.9) rotate(-3) scale(0.117) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(563.7 315.1) rotate(41.9) scale(0.086) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(720 530) rotate(2.6) scale(0.094) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(422.6 355.1) rotate(24.2) scale(0.112) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(324.2 114.2) rotate(-30.7) scale(0.155) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(384.3 506.8) rotate(1) scale(0.156) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(-9.6 391.8) rotate(38.9) scale(0.256) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(890.4 391.8) rotate(38.9) scale(0.256) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(139.2 228.3) rotate(-35) scale(0.118) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(362.1 814.4) rotate(-36.2) scale(0.108) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(173.5 110) rotate(-15.7) scale(0.243) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(235.3 461.3) rotate(-21.3) scale(0.145) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(120.7 415.6) rotate(-13) scale(0.144) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(864.1 614) rotate(-18.1) scale(0.178) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(52.1 77.4) rotate(4.3) scale(0.109) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(303.3 859.7) rotate(-15.8) scale(0.251) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(879.2 266.4) rotate(-36.7) scale(0.097) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(685 847.5) rotate(-37.3) scale(0.114) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(709.9 359.1) rotate(42.9) scale(0.148) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(170.7 451.7) rotate(-10.1) scale(0.149) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(862 212.1) rotate(32.6) scale(0.094) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(457.1 373.3) rotate(-42) scale(0.081) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(654.2 415.3) rotate(-16.9) scale(0.101) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(766.1 702.9) rotate(-28.7) scale(0.091) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(204.8 638.5) rotate(28.2) scale(0.096) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(494.5 105.7) rotate(-39.3) scale(0.179) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(37 560.4) rotate(26.6) scale(0.096) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(311.1 305.9) rotate(9.2) scale(0.088) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(475.6 473.3) rotate(42.1) scale(0.091) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(385.1 326) rotate(11.5) scale(0.136) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(366.9 559.1) rotate(22.4) scale(0.089) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(541.8 643.6) rotate(41) scale(0.18) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(503 27.2) rotate(-2.7) scale(0.108) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(698.5 627.8) rotate(38.8) scale(0.246) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(347.2 411.6) rotate(-41.5) scale(0.172) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(96.5 517.8) rotate(-13.6) scale(0.224) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(678.6 547.1) rotate(18) scale(0.111) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(667.5 493.8) rotate(7.2) scale(0.126) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(367.5 434.2) rotate(-15.2) scale(0.199) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(257.3 351.7) rotate(0.3) scale(0.156) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(271.3 516.9) rotate(-44) scale(0.091) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(24.9 885.1) rotate(12) scale(0.091) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(608.7 677) rotate(-36.8) scale(0.097) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(399.2 171.7) rotate(-2) scale(0.193) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(697 0.8) rotate(-22.1) scale(0.135) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(697 900.8) rotate(-22.1) scale(0.135) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(203.1 69.5) rotate(-12.3) scale(0.113) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(110.5 314.8) rotate(-33.5) scale(0.202) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(769.7 877.4) rotate(-32.7) scale(0.114) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(561.2 851.6) rotate(6.7) scale(0.156) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(19 553) rotate(-40.8) scale(0.23) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(559.4 484.2) rotate(40.8) scale(0.144) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(473.1 543) rotate(-1.5) scale(0.089) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(870.8 643.8) rotate(3.3) scale(0.168) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(842.6 322.4) rotate(0) scale(0.254) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(583.3 495.6) rotate(-14.5) scale(0.186) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(343.9 501.9) rotate(20.7) scale(0.109) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(187.8 667.7) rotate(32.7) scale(0.087) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(85.1 538.5) rotate(31.3) scale(0.161) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(486.7 364.9) rotate(14.7) scale(0.125) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(319 145.8) rotate(17.6) scale(0.156) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(778.1 395.3) rotate(43.3) scale(0.084) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(251.3 212.3) rotate(-20.4) scale(0.12) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(830 867.8) rotate(13.6) scale(0.143) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(332.3 782.4) rotate(39.9) scale(0.134) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(767.4 347.4) rotate(40.8) scale(0.103) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(38.6 700.8) rotate(13) scale(0.17) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(194 860.9) rotate(10.2) scale(0.116) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(395.7 194) rotate(-13.4) scale(0.177) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(59.5 337.3) rotate(-21.2) scale(0.217) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(376.1 292.3) rotate(-42.9) scale(0.081) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(698.4 271.9) rotate(-10.6) scale(0.159) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(642.6 584.8) rotate(11.7) scale(0.198) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(750.6 386.7) rotate(-19.7) scale(0.233) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(43.8 759.5) rotate(3.7) scale(0.14) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(273.8 326.3) rotate(-16.9) scale(0.157) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(32.9 604) rotate(-13.6) scale(0.118) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(463.5 86.6) rotate(8) scale(0.166) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(-4.2 212.8) rotate(17.7) scale(0.185) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(895.8 212.8) rotate(17.7) scale(0.185) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(124.9 495) rotate(13) scale(0.142) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(553.5 139.5) rotate(13.2) scale(0.174) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(472.5 595.5) rotate(3.8) scale(0.142) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(663.4 826.5) rotate(-3.6) scale(0.122) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(655.5 729.7) rotate(-17.4) scale(0.108) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(87.2 845.2) rotate(-24.9) scale(0.131) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(558.7 83.1) rotate(-42.5) scale(0.115) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(37.9 808.1) rotate(31) scale(0.143) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(654 375.2) rotate(3.2) scale(0.084) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(363.2 312.5) rotate(-6.1) scale(0.247) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(206.1 491.1) rotate(-16.1) scale(0.085) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(104 367) rotate(0.4) scale(0.138) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(861 135.8) rotate(-19.3) scale(0.175) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(608 462.4) rotate(-16.2) scale(0.151) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(554 656.8) rotate(-2.8) scale(0.104) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(-2.4 43.1) rotate(21.7) scale(0.138) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(897.6 43.1) rotate(21.7) scale(0.138) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(609.1 809.1) rotate(-7) scale(0.098) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(604.6 607.8) rotate(7.6) scale(0.1) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(443.2 235.1) rotate(26.3) scale(0.186) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(779.4 36) rotate(34.2) scale(0.127) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(192.3 54.2) rotate(-11.3) scale(0.084) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(834.3 798.7) rotate(-6.6) scale(0.1) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(602.7 285.3) rotate(-40.4) scale(0.134) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(360 87.6) rotate(44.5) scale(0.136) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(306.5 782.5) rotate(-32.9) scale(0.13) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(656.8 519.9) rotate(40.9) scale(0.09) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(342.6 102.2) rotate(-18.2) scale(0.13) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(321.6 872.6) rotate(-32.1) scale(0.186) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(136.9 606.5) rotate(37.8) scale(0.091) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(-5.9 887) rotate(17) scale(0.166) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(894.1 887) rotate(17) scale(0.166) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(484.4 649.5) rotate(44) scale(0.086) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(336.4 251) rotate(40.5) scale(0.134) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(13.1 652.2) rotate(23.8) scale(0.188) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(913.1 652.2) rotate(23.8) scale(0.188) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(521.3 592) rotate(24.7) scale(0.165) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(882.6 505.4) rotate(-16) scale(0.204) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(838.8 152.2) rotate(28.3) scale(0.154) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(549.4 127.6) rotate(16.2) scale(0.13) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(468.8 801.1) rotate(-29.4) scale(0.092) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(466.2 766.4) rotate(36.5) scale(0.109) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(253.4 300.2) rotate(-27.6) scale(0.146) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(162.1 590.9) rotate(3.9) scale(0.124) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(576.8 876.7) rotate(8.7) scale(0.248) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(219.1 216.7) rotate(9.4) scale(0.093) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(239.5 302) rotate(-22.1) scale(0.115) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(517.9 291.8) rotate(-33.3) scale(0.216) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(815.5 756.6) rotate(21.5) scale(0.246) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(180.1 267.5) rotate(-26.1) scale(0.087) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(152.5 99.9) rotate(-8) scale(0.142) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(363.9 592) rotate(-35.1) scale(0.248) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(128.9 13.5) rotate(29.5) scale(0.241) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(128.9 913.5) rotate(29.5) scale(0.241) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(481.8 402.6) rotate(-40.8) scale(0.2) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(707 485.7) rotate(6.4) scale(0.081) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(284.7 654.9) rotate(37.6) scale(0.128) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(117.6 473.7) rotate(31.7) scale(0.255) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(412.4 763.6) rotate(26.9) scale(0.223) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(266.6 1.2) rotate(-41.3) scale(0.166) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(266.6 901.2) rotate(-41.3) scale(0.166) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(162 877.2) rotate(-43.2) scale(0.225) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(173.6 28) rotate(32.8) scale(0.233) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(598.2 723.9) rotate(12.6) scale(0.123) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(361.9 504.5) rotate(19.1) scale(0.123) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(752.4 706.4) rotate(2.5) scale(0.173) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(16.1 230.1) rotate(-5) scale(0.099) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(797.5 482.3) rotate(13.7) scale(0.12) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(720.3 563.4) rotate(-17.8) scale(0.088) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(48.4 672.8) rotate(30.7) scale(0.231) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(297.3 707.6) rotate(18.2) scale(0.103) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(767.1 847.9) rotate(5.2) scale(0.245) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(254.3 745.7) rotate(43.8) scale(0.213) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(160.4 362.2) rotate(-21.2) scale(0.164) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(370.9 242.8) rotate(-39.8) scale(0.217) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(99.5 612.7) rotate(-38.2) scale(0.095) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(40.3 228.2) rotate(-26.8) scale(0.132) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(663.5 718.3) rotate(-4.7) scale(0.168) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(488 797.3) rotate(-40.3) scale(0.245) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(720.3 288.6) rotate(-4.7) scale(0.158) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(726.2 474.8) rotate(44.3) scale(0.169) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(486 583.1) rotate(37.2) scale(0.112) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(797.5 512.5) rotate(-37.8) scale(0.131) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(322 409.8) rotate(-20.2) scale(0.107) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(173.5 720.6) rotate(-16) scale(0.157) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(609.5 488.9) rotate(32.8) scale(0.08) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(793.5 108.3) rotate(-5.5) scale(0.23) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(28.3 27.5) rotate(44.1) scale(0.225) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(46 371.4) rotate(-10.2) scale(0.127) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(827.1 327.6) rotate(19.4) scale(0.113) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(743.7 243.4) rotate(39) scale(0.223) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(527.9 549.9) rotate(-13.9) scale(0.092) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(140.4 35.6) rotate(-42.1) scale(0.088) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(158.1 688.8) rotate(27) scale(0.125) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(799.5 421.2) rotate(-8.6) scale(0.123) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(574.5 62.9) rotate(11.3) scale(0.171) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(276.9 525.2) rotate(-26.8) scale(0.114) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(84.9 20.1) rotate(-37.1) scale(0.089) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(84.3 470.7) rotate(-11.5) scale(0.099) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(355.5 790.3) rotate(-33.3) scale(0.254) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(236.6 322.4) rotate(-35.4) scale(0.106) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(194.5 753.8) rotate(31.1) scale(0.099) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(726.9 277.7) rotate(7.8) scale(0.101) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(699.1 233.3) rotate(-5.5) scale(0.153) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(140.1 407.5) rotate(22.3) scale(0.13) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(605.3 192) rotate(-11.6) scale(0.173) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(91.4 299.8) rotate(28.6) scale(0.131) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(493.3 390) rotate(-9.8) scale(0.159) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(217.6 869.9) rotate(26.6) scale(0.113) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(367.1 877.2) rotate(41.7) scale(0.109) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(780.9 554.6) rotate(28.5) scale(0.245) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(804.6 401.1) rotate(-10.5) scale(0.125) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(555.3 537.6) rotate(28.4) scale(0.129) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(720.8 142.7) rotate(42) scale(0.133) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(234 777.1) rotate(-42.8) scale(0.207) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(109.9 214.1) rotate(2.1) scale(0.147) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(612.1 437) rotate(13.4) scale(0.088) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(439.2 253.8) rotate(21.3) scale(0.163) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(534.2 693.4) rotate(12.1) scale(0.131) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(674 46.8) rotate(20.5) scale(0.131) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(796 140.4) rotate(39.8) scale(0.224) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(440.5 876.4) rotate(33.8) scale(0.135) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(240.2 419.6) rotate(18.7) scale(0.103) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(572.1 131.9) rotate(12.5) scale(0.162) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(73.7 556.7) rotate(-37.7) scale(0.247) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(720.4 192.9) rotate(-16.4) scale(0.105) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(493 775.2) rotate(-26.4) scale(0.131) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(166.7 855.2) rotate(-43.4) scale(0.112) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(163.5 738.3) rotate(7.4) scale(0.204) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(550.6 250.1) rotate(32.4) scale(0.099) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(701 330.1) rotate(-31.9) scale(0.112) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(33.1 131.9) rotate(-19.7) scale(0.207) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(884.5 766.1) rotate(-37.5) scale(0.118) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(198.4 428.1) rotate(37.3) scale(0.145) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(121.2 634.6) rotate(-37.2) scale(0.105) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(365 189.9) rotate(-29.6) scale(0.175) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(733.5 171.6) rotate(36.8) scale(0.245) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(733.5 131.4) rotate(12) scale(0.092) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(546.9 185.7) rotate(36.1) scale(0.093) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(424.3 436.1) rotate(-24.1) scale(0.162) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(597.8 265.9) rotate(11.7) scale(0.162) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(525.6 576.5) rotate(-38.1) scale(0.109) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(293.3 734) rotate(-15) scale(0.253) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(519.6 840.2) rotate(-35.4) scale(0.099) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(556.5 560.9) rotate(33.5) scale(0.099) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(854.4 519.7) rotate(44.7) scale(0.157) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(671 293.4) rotate(11.8) scale(0.125) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(273.6 869.9) rotate(34.3) scale(0.128) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(594.3 861.1) rotate(-10.6) scale(0.212) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(694.6 780.2) rotate(-33.8) scale(0.182) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(117.8 394.2) rotate(37.4) scale(0.081) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(218.3 855.5) rotate(-5.6) scale(0.197) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(128.2 557.4) rotate(13.1) scale(0.1) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(56.1 292.9) rotate(-1.3) scale(0.117) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(275.2 647.6) rotate(-9.5) scale(0.096) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(734.5 63.8) rotate(11.5) scale(0.117) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(340 478) rotate(-30.8) scale(0.182) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(595.9 789.2) rotate(-11.6) scale(0.144) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(207.7 586.3) rotate(7.8) scale(0.096) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(43.3 475.2) rotate(-17.8) scale(0.084) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(491.3 547) rotate(26) scale(0.207) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(386.4 216.8) rotate(36.5) scale(0.138) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(772.7 688) rotate(-5.3) scale(0.244) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(484.7 60.4) rotate(30.4) scale(0.098) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(829.9 778.8) rotate(32.4) scale(0.152) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(525.3 803.8) rotate(-14) scale(0.237) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(143.5 704) rotate(-42.8) scale(0.123) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(621.9 348.8) rotate(22.6) scale(0.106) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(691.9 252.5) rotate(10.7) scale(0.257) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(862.8 445.9) rotate(16.4) scale(0.259) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(830.7 347) rotate(29.9) scale(0.204) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(282.7 549.3) rotate(-40.6) scale(0.248) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(560.3 188.9) rotate(18.7) scale(0.205) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(672.1 650.3) rotate(18.7) scale(0.12) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(132.6 696) rotate(-7.1) scale(0.128) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(548.3 4.2) rotate(20.1) scale(0.107) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(548.3 904.2) rotate(20.1) scale(0.107) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(275.6 840.1) rotate(-34.2) scale(0.102) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(0.9 158.3) rotate(43.6) scale(0.17) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(900.9 158.3) rotate(43.6) scale(0.17) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(644.5 818.2) rotate(-30.7) scale(0.204) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(280.2 159.7) rotate(4.4) scale(0.118) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(888.7 467.6) rotate(-8) scale(0.087) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(513.9 693.2) rotate(28) scale(0.159) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(421 654.1) rotate(30.1) scale(0.256) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(299.7 459.6) rotate(0.2) scale(0.13) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(452.6 882.6) rotate(-24.1) scale(0.119) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(635 431.3) rotate(1) scale(0.183) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(659.1 760.5) rotate(-22.3) scale(0.115) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(687.4 15.3) rotate(-36.4) scale(0.116) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(658.3 781.4) rotate(37.1) scale(0.093) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(153.5 333.5) rotate(29.1) scale(0.159) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(137.8 276.1) rotate(20.4) scale(0.091) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(386.9 559.4) rotate(-37.3) scale(0.227) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(173.7 221.2) rotate(-7.5) scale(0.111) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(249.3 144.4) rotate(5.2) scale(0.096) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(577.6 801.9) rotate(37.7) scale(0.226) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(522.7 456.1) rotate(-18.9) scale(0.112) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(660.6 448.9) rotate(-40.4) scale(0.166) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(5.9 457.1) rotate(-37.5) scale(0.154) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(905.9 457.1) rotate(-37.5) scale(0.154) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(799.5 16.4) rotate(-44.5) scale(0.122) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(589.4 635.2) rotate(-41.8) scale(0.207) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(854.2 3.5) rotate(41.4) scale(0.111) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(854.2 903.5) rotate(41.4) scale(0.111) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(81.3 395.9) rotate(14.5) scale(0.182) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(306.2 430.2) rotate(5.9) scale(0.106) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(812.3 137.1) rotate(18.5) scale(0.169) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(408.9 736.2) rotate(27) scale(0.251) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(211.1 656.7) rotate(-25.3) scale(0.186) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(67.7 424.3) rotate(23.1) scale(0.09) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(728.3 26) rotate(11.6) scale(0.083) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(485.3 880) rotate(-10.9) scale(0.147) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(205.6 550.8) rotate(-19.3) scale(0.085) translate(-50 -50)"/>
+    <use href="#f-spark" transform="translate(322.3 593.1) rotate(-18.3) scale(0.084) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(756.1 430.2) rotate(37.1) scale(0.092) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(419.6 591.3) rotate(29.1) scale(0.087) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(90.4 423.2) rotate(41.2) scale(0.127) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(455.2 201.9) rotate(-3.8) scale(0.116) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(244.2 694.5) rotate(-5.7) scale(0.107) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(397.3 806.5) rotate(9.2) scale(0.178) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(405.9 455.2) rotate(43.9) scale(0.199) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(390.8 296.8) rotate(-26.8) scale(0.179) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(219.6 670.9) rotate(14.7) scale(0.089) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(113.5 734) rotate(-11.5) scale(0.17) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(883.6 735.9) rotate(-40.9) scale(0.137) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(71 211.8) rotate(-14) scale(0.133) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(483.4 1.2) rotate(-8.4) scale(0.213) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(483.4 901.2) rotate(-8.4) scale(0.213) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(885.7 441.7) rotate(-12.5) scale(0.103) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(229.1 399.1) rotate(21.9) scale(0.17) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(667.2 108.4) rotate(-20.5) scale(0.093) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(312.1 67.2) rotate(-31.2) scale(0.167) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(461.5 228.2) rotate(21.3) scale(0.187) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(726.8 447.6) rotate(2.1) scale(0.101) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(319.8 734.8) rotate(-10.8) scale(0.125) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(-6.4 579.3) rotate(5.6) scale(0.091) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(893.6 579.3) rotate(5.6) scale(0.091) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(743.5 500) rotate(-29.4) scale(0.119) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(60.2 179.4) rotate(31.5) scale(0.256) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(840.2 35.5) rotate(-40.7) scale(0.107) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(738.9 655.2) rotate(7.5) scale(0.178) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(183.5 204.5) rotate(-21.5) scale(0.14) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(427.8 299.8) rotate(13.6) scale(0.243) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(593.7 33.3) rotate(-41.1) scale(0.09) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(205.4 798.7) rotate(-25.6) scale(0.188) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(870.5 331.2) rotate(38.1) scale(0.114) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(635.2 30) rotate(-40.8) scale(0.252) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(382.2 873.1) rotate(-39.7) scale(0.153) translate(-50 -50)"/>
+    <use href="#f-dot" transform="translate(118.7 801.5) rotate(-31.5) scale(0.169) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(25.5 773) rotate(24.1) scale(0.116) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(-2.3 178.1) rotate(3.3) scale(0.113) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(897.7 178.1) rotate(3.3) scale(0.113) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(73.6 99.4) rotate(34.3) scale(0.199) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(247.6 120.8) rotate(-21.5) scale(0.163) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(102.5 686.4) rotate(-0.9) scale(0.255) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(495.9 848) rotate(5.4) scale(0.154) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(398.9 256.3) rotate(-34.4) scale(0.085) translate(-50 -50)"/>
+    <use href="#f-heart" transform="translate(699.1 742.1) rotate(-20.2) scale(0.109) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(127.4 138.7) rotate(26.9) scale(0.214) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(817.7 36.3) rotate(32.6) scale(0.23) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(602.5 585.3) rotate(40.2) scale(0.155) translate(-50 -50)"/>
+    <use href="#f-diamond" transform="translate(269.6 39.8) rotate(44.5) scale(0.157) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(86.2 813.8) rotate(1.7) scale(0.082) translate(-50 -50)"/>
+    <use href="#f-plus" transform="translate(522.1 66.7) rotate(-5.2) scale(0.146) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(891.8 133.2) rotate(27.6) scale(0.105) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(-5 81.8) rotate(27.3) scale(0.152) translate(-50 -50)"/>
+    <use href="#f-x" transform="translate(895 81.8) rotate(27.3) scale(0.152) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(288.6 485.3) rotate(-42.5) scale(0.165) translate(-50 -50)"/>
+    <use href="#f-tri" transform="translate(378.5 655.1) rotate(9.7) scale(0.118) translate(-50 -50)"/>
+    <use href="#f-star" transform="translate(288.2 85.5) rotate(-42.5) scale(0.175) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(396.4 644.6) rotate(6.6) scale(0.202) translate(-50 -50)"/>
+    <use href="#f-arc" transform="translate(341.6 202) rotate(26.1) scale(0.107) translate(-50 -50)"/>
+    <use href="#f-ring" transform="translate(333.5 424.4) rotate(2.4) scale(0.129) translate(-50 -50)"/>
   </g>
 </svg>

@@ -98,8 +98,8 @@ body.login::before {
   inset: 0;
   z-index: -1;
   background: url("pattern.svg") repeat;
-  background-size: 360px auto;
-  opacity: .06;
+  background-size: 760px auto;
+  opacity: .07;
   pointer-events: none;
 }
 
