@@ -1,0 +1,298 @@
+/* Résumé layout. Loaded after style.css, which supplies the color tokens. */
+
+:root {
+  --cat-lead:    #7a4fd6;
+  --cat-stem:    #1f6fb2;
+  --cat-service: #14795c;
+  --cat-sport:   #c05621;
+  --cat-arts:    #b3357a;
+  --tint: 12%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cat-lead:    #b79bf0;
+    --cat-stem:    #7bbdf0;
+    --cat-service: #63c9a4;
+    --cat-sport:   #f0a06a;
+    --cat-arts:    #ef8ac0;
+    --tint: 18%;
+  }
+}
+
+/* style.css centers a narrow column; the résumé needs the full page. */
+body.resume {
+  display: block;
+  place-items: initial;
+  padding: 0;
+}
+
+.resume main {
+  max-width: 58rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* --- header --- */
+
+.masthead {
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid var(--fg);
+}
+
+.masthead h1 {
+  margin: 0;
+  font-size: clamp(2.1rem, 7vw, 3.2rem);
+  font-weight: 650;
+  letter-spacing: -.03em;
+  line-height: 1.05;
+}
+
+.masthead .tagline {
+  margin: .5rem 0 0;
+  font-size: clamp(1rem, 2.6vw, 1.15rem);
+  color: var(--muted);
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.1rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+.contact a { color: inherit; }
+
+/* --- stat strip --- */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .75rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 40rem) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+.stats li {
+  padding: .85rem .9rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.stats .value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 650;
+  letter-spacing: -.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.stats .label {
+  display: block;
+  margin-top: .1rem;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--muted);
+}
+
+/* --- two-column body --- */
+
+.columns {
+  display: grid;
+  grid-template-columns: 1.75fr 1fr;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  align-items: start;
+}
+
+@media (max-width: 52rem) {
+  .columns { grid-template-columns: 1fr; gap: 1rem; }
+}
+
+section { margin-bottom: 2.25rem; }
+
+section > h2 {
+  margin: 0 0 1rem;
+  font-size: .8rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted);
+  padding-bottom: .45rem;
+  border-bottom: 1px solid var(--line);
+}
+
+/* --- activity entries --- */
+
+.entry {
+  position: relative;
+  padding: 0 0 1.4rem 1.15rem;
+  border-left: 2px solid var(--line);
+}
+
+.entry:last-child { padding-bottom: 0; }
+
+.entry::before {
+  content: "";
+  position: absolute;
+  left: -.34rem;
+  top: .42rem;
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+  background: var(--dot, var(--muted));
+}
+
+.entry[data-cat="lead"]    { --dot: var(--cat-lead); }
+.entry[data-cat="stem"]    { --dot: var(--cat-stem); }
+.entry[data-cat="service"] { --dot: var(--cat-service); }
+.entry[data-cat="sport"]   { --dot: var(--cat-sport); }
+.entry[data-cat="arts"]    { --dot: var(--cat-arts); }
+
+.entry h3 {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.entry .org {
+  display: block;
+  margin-top: .1rem;
+  font-size: .92rem;
+  color: var(--muted);
+}
+
+.entry .meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .45rem;
+  margin-top: .45rem;
+  font-size: .78rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.chip {
+  padding: .12rem .5rem;
+  border-radius: 999px;
+  font-size: .68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--dot);
+  background: color-mix(in srgb, var(--dot) var(--tint), transparent);
+}
+
+.entry ul {
+  margin: .55rem 0 0;
+  padding-left: 1.05rem;
+}
+
+.entry li {
+  margin-bottom: .28rem;
+  font-size: .93rem;
+}
+
+.entry li::marker { color: var(--muted); }
+
+/* Numbers earn their emphasis — impact reads first. */
+.entry b {
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- sidebar --- */
+
+.side ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: .93rem;
+}
+
+.side li { margin-bottom: .6rem; }
+
+.side .term {
+  display: block;
+  font-weight: 600;
+}
+
+.side .detail {
+  display: block;
+  color: var(--muted);
+  font-size: .88rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+}
+
+.tags span {
+  padding: .22rem .6rem;
+  font-size: .82rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+/* --- footer controls --- */
+
+.controls {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.controls button {
+  padding: .55rem .95rem;
+  font-size: .9rem;
+}
+
+/* Placeholder highlighting — delete this rule once real content is in. */
+.ph {
+  background: color-mix(in srgb, var(--cat-sport) 16%, transparent);
+  border-radius: 3px;
+  padding: 0 .15em;
+}
+
+/* --- print / save as PDF --- */
+
+@media print {
+  :root {
+    --bg: #fff; --fg: #000; --muted: #444;
+    --card: #fff; --line: #bbb; --tint: 10%;
+  }
+
+  @page { margin: 12mm; }
+
+  body.resume { background: #fff; font-size: 10.5pt; }
+  .resume main { max-width: none; padding: 0; }
+  .controls, .no-print { display: none !important; }
+  .ph { background: none; }
+
+  .columns { gap: 1.75rem; }
+  section { margin-bottom: 1.2rem; }
+  .entry, section { break-inside: avoid; }
+  .stats { gap: .4rem; }
+  .stats li { padding: .5rem; }
+  .stats .value { font-size: 1.1rem; }
+  a { text-decoration: none; color: #000; }
+}

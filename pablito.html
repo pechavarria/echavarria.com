@@ -1,13 +1,252 @@
+<!--
+  Pablito — university résumé.
+
+  Everything wrapped in <span class="ph">…</span> is a PLACEHOLDER. Replace the
+  text and remove the class. When no placeholders remain, delete the `.ph` rule
+  from assets/resume.css.
+
+  Writing guidance for the bullets:
+  - Lead with the outcome, not the duty. "Grew the team from 6 to 24" beats
+    "Responsible for recruiting members."
+  - Put a number in as many bullets as honestly possible, wrapped in <b> so it
+    catches the eye during a fast read.
+  - Order activities by depth of commitment, not chronology. Admissions readers
+    look for sustained involvement and rising responsibility.
+  - Four to six activities described well beats twelve listed thinly.
+-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Pablito — Familia Echavarria</title>
+<title>Pablito — Résumé</title>
 <link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/resume.css">
 <script src="assets/auth.js"></script>
 <script>requireAccess();</script>
 
+<body class="resume">
 <main>
-  <h1>🧒 Pablito</h1>
-  <p class="sub">Aquí va el contenido de Pablito.</p>
-  <a class="link" href="home.html">← Volver</a>
+
+  <header class="masthead">
+    <h1><span class="ph">Pablo Echavarria</span></h1>
+    <p class="tagline">
+      <span class="ph">Class of 2027</span> ·
+      <span class="ph">Lincoln High School</span> ·
+      <span class="ph">Austin, TX</span>
+    </p>
+    <ul class="contact">
+      <li><a href="mailto:placeholder@example.com" class="ph">placeholder@example.com</a></li>
+      <li><span class="ph">(512) 555-0142</span></li>
+      <li><a href="#" class="ph">linkedin.com/in/…</a></li>
+      <li><a href="#" class="ph">github.com/…</a></li>
+    </ul>
+  </header>
+
+  <ul class="stats">
+    <li><span class="value ph">3.94</span><span class="label">GPA (unweighted)</span></li>
+    <li><span class="value ph">4.41</span><span class="label">GPA (weighted)</span></li>
+    <li><span class="value ph">9</span><span class="label">AP / Honors courses</span></li>
+    <li><span class="value ph">310</span><span class="label">Service hours</span></li>
+  </ul>
+
+  <div class="columns">
+
+    <div class="col-main">
+
+      <section>
+        <h2>Leadership &amp; Extracurriculars</h2>
+
+        <article class="entry" data-cat="lead">
+          <h3><span class="ph">President</span></h3>
+          <span class="org"><span class="ph">Student Government Association</span></span>
+          <div class="meta">
+            <span class="chip">Leadership</span>
+            <span class="ph">Aug 2025 – Present</span> ·
+            <span class="ph">3 years in organization</span>
+          </div>
+          <ul>
+            <li><span class="ph">Elected by a student body of <b>1,800</b>; led a cabinet of <b>12</b> officers.</span></li>
+            <li><span class="ph">Wrote and passed a schedule-reform proposal adopted district-wide.</span></li>
+            <li><span class="ph">Raised <b>$14,000</b> for the senior class fund, up <b>60%</b> year over year.</span></li>
+          </ul>
+        </article>
+
+        <article class="entry" data-cat="stem">
+          <h3><span class="ph">Team Captain &amp; Lead Programmer</span></h3>
+          <span class="org"><span class="ph">FIRST Robotics, Team 4290</span></span>
+          <div class="meta">
+            <span class="chip">STEM</span>
+            <span class="ph">Sep 2023 – Present</span> ·
+            <span class="ph">~15 hrs/week in season</span>
+          </div>
+          <ul>
+            <li><span class="ph">Advanced to the <b>state championship</b> two consecutive years.</span></li>
+            <li><span class="ph">Built the autonomous routine that scored in <b>90%</b> of qualifying matches.</span></li>
+            <li><span class="ph">Mentored <b>8</b> freshmen through their first competition build.</span></li>
+          </ul>
+        </article>
+
+        <article class="entry" data-cat="service">
+          <h3><span class="ph">Founder</span></h3>
+          <span class="org"><span class="ph">Bilingual Tutoring Initiative</span></span>
+          <div class="meta">
+            <span class="chip">Service</span>
+            <span class="ph">Jun 2024 – Present</span> ·
+            <span class="ph">Self-started</span>
+          </div>
+          <ul>
+            <li><span class="ph">Founded a free Spanish/English tutoring program serving <b>45</b> elementary students.</span></li>
+            <li><span class="ph">Recruited and scheduled <b>20</b> volunteer tutors across <b>3</b> campuses.</span></li>
+            <li><span class="ph">Partner school reported a <b>1.2 grade-level</b> average reading gain.</span></li>
+          </ul>
+        </article>
+
+        <article class="entry" data-cat="sport">
+          <h3><span class="ph">Varsity Midfielder, Team Captain</span></h3>
+          <span class="org"><span class="ph">Varsity Soccer</span></span>
+          <div class="meta">
+            <span class="chip">Athletics</span>
+            <span class="ph">Sep 2022 – Present</span> ·
+            <span class="ph">4 seasons</span>
+          </div>
+          <ul>
+            <li><span class="ph">Named captain as a junior; <b>All-District</b> selection 2025.</span></li>
+            <li><span class="ph">Team reached the regional semifinal for the first time in <b>11</b> years.</span></li>
+          </ul>
+        </article>
+
+        <article class="entry" data-cat="arts">
+          <h3><span class="ph">First Chair Trumpet</span></h3>
+          <span class="org"><span class="ph">Wind Ensemble &amp; Jazz Band</span></span>
+          <div class="meta">
+            <span class="chip">Arts</span>
+            <span class="ph">Aug 2022 – Present</span>
+          </div>
+          <ul>
+            <li><span class="ph">Selected for <b>All-State Band</b>, 2025 and 2026.</span></li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Work &amp; Projects</h2>
+
+        <article class="entry" data-cat="stem">
+          <h3><span class="ph">Summer Research Intern</span></h3>
+          <span class="org"><span class="ph">UT Austin, Materials Science Lab</span></span>
+          <div class="meta">
+            <span class="chip">STEM</span>
+            <span class="ph">Jun – Aug 2025</span>
+          </div>
+          <ul>
+            <li><span class="ph">Automated a data-collection pipeline in Python, cutting analysis time <b>70%</b>.</span></li>
+            <li><span class="ph">Co-authored a poster presented at an undergraduate symposium.</span></li>
+          </ul>
+        </article>
+
+        <article class="entry" data-cat="stem">
+          <h3><span class="ph">Independent Project — Trail Conditions App</span></h3>
+          <span class="org"><span class="ph">Personal</span></span>
+          <div class="meta">
+            <span class="chip">STEM</span>
+            <span class="ph">2025</span>
+          </div>
+          <ul>
+            <li><span class="ph">Android app aggregating local trail reports; <b>500+</b> installs.</span></li>
+          </ul>
+        </article>
+      </section>
+
+    </div>
+
+    <aside class="col-side side">
+
+      <section>
+        <h2>Academics</h2>
+        <ul>
+          <li>
+            <span class="term ph">Lincoln High School</span>
+            <span class="detail ph">Austin, TX · Expected graduation May 2027</span>
+          </li>
+          <li>
+            <span class="term">Class rank</span>
+            <span class="detail ph">12 of 430</span>
+          </li>
+          <li>
+            <span class="term">Test scores</span>
+            <span class="detail ph">SAT 1510 (760 EBRW / 750 Math)</span>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Advanced Coursework</h2>
+        <div class="tags">
+          <span class="ph">AP Calculus BC</span>
+          <span class="ph">AP Physics C</span>
+          <span class="ph">AP Computer Science A</span>
+          <span class="ph">AP Spanish Lang</span>
+          <span class="ph">AP US History</span>
+          <span class="ph">AP Chemistry</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Honors &amp; Awards</h2>
+        <ul>
+          <li>
+            <span class="term ph">National Merit Semifinalist</span>
+            <span class="detail ph">2026</span>
+          </li>
+          <li>
+            <span class="term ph">AP Scholar with Distinction</span>
+            <span class="detail ph">2025</span>
+          </li>
+          <li>
+            <span class="term ph">Regional Science Fair, 1st Place</span>
+            <span class="detail ph">Engineering division, 2025</span>
+          </li>
+          <li>
+            <span class="term ph">Presidential Volunteer Service Award</span>
+            <span class="detail ph">Gold, 2025</span>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="tags">
+          <span class="ph">Python</span>
+          <span class="ph">Java</span>
+          <span class="ph">CAD / Onshape</span>
+          <span class="ph">Data analysis</span>
+          <span class="ph">Public speaking</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <ul>
+          <li>
+            <span class="term ph">Spanish</span>
+            <span class="detail ph">Native / bilingual</span>
+          </li>
+          <li>
+            <span class="term ph">English</span>
+            <span class="detail ph">Native / bilingual</span>
+          </li>
+        </ul>
+      </section>
+
+    </aside>
+  </div>
+
+  <div class="controls no-print">
+    <button type="button" id="print">Print / Save as PDF</button>
+    <a class="link" href="home.html">← Volver</a>
+  </div>
+
 </main>
+
+<script>
+  document.getElementById('print').addEventListener('click', () => window.print());
+</script>
