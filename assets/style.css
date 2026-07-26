@@ -104,12 +104,16 @@ button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
 
 /* --- family grid --- */
 
-/* Always one row of four, whatever the viewport. */
+/* One row of four, sized off a single knob so the page never scrolls.
+   --tile is a quarter of the previous ~9.5rem tile. Raise it to enlarge. */
 .people {
+  --tile: 2.4rem;
+
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(.35rem, 2vw, .85rem);
-  margin: 0 0 1.75rem;
+  grid-template-columns: repeat(4, var(--tile));
+  justify-content: center;
+  gap: .5rem;
+  margin: 0 0 1.25rem;
   padding: 0;
   list-style: none;
 }
@@ -148,11 +152,11 @@ button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
 
 .people .name {
   display: block;
-  padding: .5rem .35rem .6rem;
+  padding: .2rem .1rem .28rem;
   font-weight: 550;
-  font-size: clamp(.72rem, 2.5vw, .95rem);
+  font-size: .58rem;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.15;
   text-wrap: balance;
   border-top: 1px solid var(--line);
 }
