@@ -104,17 +104,14 @@ button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
 
 /* --- family grid --- */
 
+/* Always one row of four, whatever the viewport. */
 .people {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: .85rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(.35rem, 2vw, .85rem);
   margin: 0 0 1.75rem;
   padding: 0;
   list-style: none;
-}
-
-@media (max-width: 26rem) {
-  .people { grid-template-columns: 1fr; }
 }
 
 .people a {
@@ -122,9 +119,9 @@ button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: .4rem;
-  min-height: 8rem;
-  padding: 1rem;
+  gap: .5rem;
+  aspect-ratio: 1;
+  padding: clamp(.4rem, 2vw, .9rem);
   color: inherit;
   text-decoration: none;
   background: var(--card);
@@ -143,8 +140,36 @@ button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
   outline-offset: 2px;
 }
 
-.people .emoji { font-size: 2rem; line-height: 1; }
-.people .name { font-weight: 550; }
+/* Emoji and photo occupy the same circular slot so tiles stay uniform. */
+.people .avatar {
+  display: grid;
+  place-items: center;
+  width: clamp(2.2rem, 12vw, 4rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  font-size: clamp(1.1rem, 6.5vw, 2.1rem);
+  line-height: 1;
+}
+
+.people .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.people .name {
+  font-weight: 550;
+  font-size: clamp(.7rem, 2.6vw, .95rem);
+  text-align: center;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+/* The hub needs more room than the narrow login column. */
+body.hub main { max-width: 40rem; }
 
 /* --- shared bits --- */
 
