@@ -10,7 +10,7 @@
 //     $s=[Security.Cryptography.SHA256]::Create()
 //     (($s.ComputeHash([Text.Encoding]::UTF8.GetBytes($c))|%{$_.ToString('x2')})-join'')
 
-const CODE_HASH = '33e4b311390fb53f9d79540d2127011178afbdfa334a77b942a22ac962022efd';
+const CODE_HASH = 'cfba9de3e226afcf414addeb854657a1f45b4573763a5899701e2c13fa3bc791';
 
 const STORE_KEY = 'echavarria.access';
 

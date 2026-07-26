@@ -55,6 +55,25 @@ h1 {
   font-size: .95rem;
 }
 
+/* Crest stands in for the page heading on the login screen. The artwork
+   keeps its own white ground, framed as a plaque so it reads as deliberate
+   on the dark theme instead of looking like a stray white rectangle. */
+h1:has(.crest) {
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+h1:has(.crest) + .sub { text-align: center; }
+
+.crest {
+  width: 100%;
+  max-width: 19rem;
+  height: auto;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
 /* --- login --- */
 
 form {
