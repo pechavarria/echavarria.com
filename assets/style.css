@@ -114,19 +114,15 @@ button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
   list-style: none;
 }
 
+/* The photo is the button; the name sits underneath it. */
 .people a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: .5rem;
-  aspect-ratio: 1;
-  padding: clamp(.4rem, 2vw, .9rem);
+  display: block;
   color: inherit;
   text-decoration: none;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
+  overflow: hidden;
   transition: transform .12s ease, border-color .12s ease;
 }
 
@@ -140,36 +136,41 @@ button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
   outline-offset: 2px;
 }
 
-/* Emoji and photo occupy the same circular slot so tiles stay uniform. */
-.people .avatar {
-  display: grid;
-  place-items: center;
-  width: clamp(2.2rem, 12vw, 4rem);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  overflow: hidden;
-  background: color-mix(in srgb, var(--accent) 10%, transparent);
-  font-size: clamp(1.1rem, 6.5vw, 2.1rem);
-  line-height: 1;
-}
-
-.people .avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.people img {
   display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  /* Faces sit high in these portraits — bias the crop upward. */
+  object-position: 50% 22%;
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
 }
 
 .people .name {
+  display: block;
+  padding: .5rem .35rem .6rem;
   font-weight: 550;
-  font-size: clamp(.7rem, 2.6vw, .95rem);
+  font-size: clamp(.72rem, 2.5vw, .95rem);
   text-align: center;
   line-height: 1.2;
   text-wrap: balance;
+  border-top: 1px solid var(--line);
 }
 
 /* The hub needs more room than the narrow login column. */
 body.hub main { max-width: 40rem; }
+
+/* Portrait on an individual member page. */
+.portrait {
+  display: block;
+  width: 6rem;
+  aspect-ratio: 1;
+  margin: 0 0 1.1rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 22%;
+  border: 1px solid var(--line);
+}
 
 /* --- shared bits --- */
 
