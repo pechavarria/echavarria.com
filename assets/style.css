@@ -179,6 +179,10 @@ button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
 .people img {
   display: block;
   width: 100%;
+  /* height:auto is load-bearing. The <img> carries height="512"; without this
+     that presentational hint makes the height definite, aspect-ratio is
+     ignored, and the tile renders as a tall strip. */
+  height: auto;
   aspect-ratio: 1;
   object-fit: cover;
   /* Faces sit high in these portraits — bias the crop upward. */
@@ -210,13 +214,19 @@ button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
   text-wrap: balance;
 }
 
-/* The hub needs more room than the narrow login column. */
-body.hub main { max-width: 40rem; }
+/* The hub needs more room than the narrow login column, and its heading
+   should line up with the centred tile row. */
+body.hub main {
+  max-width: 40rem;
+  text-align: center;
+}
 
-/* Portrait on an individual member page. */
+/* Portrait on an individual member page. Same height:auto requirement as
+   .people img - the tag's height attribute would otherwise win. */
 .portrait {
   display: block;
   width: 6rem;
+  height: auto;
   aspect-ratio: 1;
   margin: 0 0 1.1rem;
   border-radius: 50%;
