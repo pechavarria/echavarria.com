@@ -119,26 +119,12 @@ button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
   list-style: none;
 }
 
-/* The photo is the button; the name sits underneath it. */
+/* The square photo IS the button. The name is a caption outside it, so the
+   button stays square instead of growing a text strip inside its border. */
 .people a {
   display: block;
   color: inherit;
   text-decoration: none;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
-  transition: transform .12s ease, border-color .12s ease;
-}
-
-.people a:hover {
-  transform: translateY(-2px);
-  border-color: var(--accent);
-}
-
-.people a:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
 }
 
 .people img {
@@ -149,17 +135,30 @@ button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
   /* Faces sit high in these portraits — bias the crop upward. */
   object-position: 50% 22%;
   background: color-mix(in srgb, var(--accent) 8%, transparent);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: transform .12s ease, border-color .12s ease;
+}
+
+.people a:hover img {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.people a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: var(--radius);
 }
 
 .people .name {
   display: block;
-  padding: .32rem .2rem .4rem;
+  margin-top: .35rem;
   font-weight: 550;
   font-size: .72rem;
   text-align: center;
   line-height: 1.2;
   text-wrap: balance;
-  border-top: 1px solid var(--line);
 }
 
 /* The hub needs more room than the narrow login column. */
