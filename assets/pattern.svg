@@ -106,12 +106,6 @@
       <path d="M16 66h68q-8 12-34 12T16 66z"/>
       <path d="M46 62V18L24 62zM54 62V30l22 32z"/>
     </g>
-    <g id="lighthouse">
-      <path d="M38 78 42 36h16l4 42z"/>
-      <path d="M40 50h20M36 36h28M46 26h8"/>
-      <path d="M22 30l10 4M78 30l-10 4"/>
-    </g>
-
     <!-- usa -->
     <g id="pine">
       <path d="M50 18 34 44h32zM50 34 30 62h40zM50 50 26 80h48z"/>
