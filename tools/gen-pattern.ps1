@@ -1,25 +1,28 @@
-﻿# Generates assets/pattern.svg: a dense, organically scattered doodle tile.
+# Generates assets/pattern.svg: a dense doodle tile in the style of a
+# messaging-app chat wallpaper.
 #
-# Placement is STRATIFIED: the tile is divided into cells and each cell gets one
-# candidate at a random position inside it. That guarantees even coverage (plain
-# dart-throwing leaves visible voids and clumps) while the intra-cell randomness,
-# varied sizes and rotations keep it from reading as a grid.
-#
-# Spacing uses a toroidal metric, and anything overlapping an edge is emitted
-# again shifted by one tile width/height. The viewBox clips the copy, so the
-# repeat is seamless.
+# Placement rules that matter for the look:
+#   1. NO OVERLAP. Every item reserves a circle of radius size*0.55 and must
+#      clear every other item by a 4% margin. (An earlier version used a
+#      "crowd" factor below 1.0, which mathematically guaranteed collisions.)
+#   2. WIDE SIZE SPREAD. Three icon classes from 26 to 96 units - a ~3.7x
+#      range - instead of one narrow band, so the eye reads variety.
+#   3. LARGEST FIRST. Big shapes claim space before small ones, then smaller
+#      items pack into the leftovers. Small-first would fragment the tile and
+#      leave no room for anything large.
+#   4. STRATIFIED CANDIDATES. Each class draws from its own grid of cells, one
+#      candidate per cell at a random position inside it, so coverage stays
+#      even without the positions reading as a grid.
+#   5. SEAMLESS. Spacing uses a toroidal metric and anything overlapping an
+#      edge is emitted again one tile over; the viewBox clips it.
 
 param(
-  [int]$Seed = 20260726,
-  [int]$Tile = 900,
-  [int]$IconCols = 13,      # 13x13 = 169 icon candidates
-  [int]$FillerCols = 26     # 26x26 = 676 filler candidates, thinned by $FillerKeep
+  [int]$Seed = 91127,
+  [int]$Tile = 900
 )
 
-$FillerKeep = 0.62
-
-$defsPath = Join-Path $PSScriptRoot 'icons-defs.svg'
 $outPath  = Join-Path (Split-Path $PSScriptRoot -Parent) 'assets\pattern.svg'
+$defsPath = Join-Path $PSScriptRoot 'icons-defs.svg'
 
 $icons = @(
   'soccer','basket','jersey','whistle','trophy',
@@ -37,7 +40,15 @@ $icons = @(
 )
 $fillers = @('f-dot','f-ring','f-star','f-spark','f-heart','f-tri','f-arc','f-plus','f-x','f-diamond')
 
-# --- deterministic RNG (LCG) ---
+# kind, target count, min size, max size, candidate grid, tries per cell
+$classes = @(
+  @{ Kind = 'icon';   Count = 15;  Min = 74; Max = 96; Grid = 4;  Tries = 90 },
+  @{ Kind = 'icon';   Count = 52;  Min = 50; Max = 70; Grid = 8;  Tries = 70 },
+  @{ Kind = 'icon';   Count = 104; Min = 26; Max = 46; Grid = 11; Tries = 50 },
+  @{ Kind = 'filler'; Count = 250; Min = 9;  Max = 26; Grid = 18; Tries = 40 }
+)
+
+# --- deterministic RNG ---
 $script:state = [uint32]$Seed
 function Rnd {
   $script:state = [uint32](($script:state * 1103515245 + 12345) -band 0x7FFFFFFF)
@@ -45,94 +56,90 @@ function Rnd {
 }
 function RndRange([double]$a, [double]$b) { $a + (Rnd) * ($b - $a) }
 
-function TorDist([double]$x1, [double]$y1, [double]$x2, [double]$y2) {
-  $dx = [Math]::Abs($x1 - $x2); if ($dx -gt $Tile / 2) { $dx = $Tile - $dx }
-  $dy = [Math]::Abs($y1 - $y2); if ($dy -gt $Tile / 2) { $dy = $Tile - $dy }
-  return [Math]::Sqrt($dx * $dx + $dy * $dy)
-}
+# --- flat parallel arrays: fast enough for the O(n^2) proximity test ---
+$cap = 700
+$px = New-Object 'double[]' $cap
+$py = New-Object 'double[]' $cap
+$pr = New-Object 'double[]' $cap
+$pn = New-Object 'string[]' $cap
+$ps = New-Object 'double[]' $cap
+$pt = New-Object 'double[]' $cap
+$n  = 0
 
-$placed = New-Object System.Collections.ArrayList
-$uses   = New-Object System.Collections.ArrayList
+$half = $Tile / 2.0
+$margin = 1.04
 
-function TryCell([double]$cx0, [double]$cy0, [double]$cw, [double]$ch, [double]$size, [double]$crowd, [int]$tries) {
-  $r = $size / 2
-  for ($t = 0; $t -lt $tries; $t++) {
-    $x = RndRange $cx0 ($cx0 + $cw)
-    $y = RndRange $cy0 ($cy0 + $ch)
-    $ok = $true
-    foreach ($p in $placed) {
-      if ((TorDist $x $y $p.X $p.Y) -lt (($r + $p.R) * $crowd)) { $ok = $false; break }
-    }
-    if ($ok) { return @{ X = $x; Y = $y; R = $r } }
-  }
-  return $null
-}
-
-# --- icons on a stratified grid, cell order shuffled so sizes don't sweep ---
-$cells = @()
-for ($r = 0; $r -lt $IconCols; $r++) { for ($c = 0; $c -lt $IconCols; $c++) { $cells += ,@($c, $r) } }
-$cells = $cells | Sort-Object { Rnd }
-
-# ArrayList, not array slicing: $arr[1..0] on a 1-element array yields
-# ($null, item) in PowerShell, which silently jams the bag on one icon.
 $bag = New-Object System.Collections.ArrayList
-$iconPlaced = 0
-$cw = $Tile / $IconCols
+$iconTotal = 0
+$fillTotal = 0
 
-foreach ($cell in $cells) {
-  if ($bag.Count -eq 0) { foreach ($i in ($icons | Sort-Object { Rnd })) { [void]$bag.Add($i) } }
-  $name = $bag[0]; $bag.RemoveAt(0)
+foreach ($cls in $classes) {
+  $grid = $cls.Grid
+  $cw = $Tile / $grid
 
-  $roll = Rnd
-  if ($roll -lt 0.16)     { $size = RndRange 54 68 }
-  elseif ($roll -lt 0.60) { $size = RndRange 42 54 }
-  else                    { $size = RndRange 32 42 }
+  # shuffled cell order, so size draws don't sweep across the tile
+  $cells = @()
+  for ($r = 0; $r -lt $grid; $r++) { for ($c = 0; $c -lt $grid; $c++) { $cells += ,@($c, $r) } }
+  $cells = $cells | Sort-Object { Rnd }
 
-  $spot = TryCell ($cell[0] * $cw) ($cell[1] * $cw) $cw $cw $size 0.52 24
-  if (-not $spot) { continue }
-  $spot.Name = $name
-  $spot.Size = $size
-  $spot.Rot  = RndRange -24 24
-  [void]$placed.Add($spot); [void]$uses.Add($spot)
-  $iconPlaced++
+  $want = $cls.Count
+  $got = 0
+
+  foreach ($cell in $cells) {
+    if ($got -ge $want) { break }
+
+    $size = RndRange $cls.Min $cls.Max
+    $r = $size * 0.55
+    $ox = $cell[0] * $cw
+    $oy = $cell[1] * $cw
+
+    for ($t = 0; $t -lt $cls.Tries; $t++) {
+      $x = $ox + (Rnd) * $cw
+      $y = $oy + (Rnd) * $cw
+      $ok = $true
+      for ($i = 0; $i -lt $n; $i++) {
+        $sum = $r + $pr[$i]
+        $dx = [Math]::Abs($x - $px[$i]); if ($dx -gt $half) { $dx = $Tile - $dx }
+        if ($dx -gt $sum * $margin) { continue }
+        $dy = [Math]::Abs($y - $py[$i]); if ($dy -gt $half) { $dy = $Tile - $dy }
+        if ($dy -gt $sum * $margin) { continue }
+        $need = $sum * $margin
+        if (($dx * $dx + $dy * $dy) -lt ($need * $need)) { $ok = $false; break }
+      }
+      if (-not $ok) { continue }
+
+      if ($cls.Kind -eq 'icon') {
+        if ($bag.Count -eq 0) { foreach ($ic in ($icons | Sort-Object { Rnd })) { [void]$bag.Add($ic) } }
+        $name = $bag[0]; $bag.RemoveAt(0)
+        $iconTotal++
+      } else {
+        $name = $fillers[[int][Math]::Floor((Rnd) * $fillers.Count) % $fillers.Count]
+        $fillTotal++
+      }
+
+      $px[$n] = $x; $py[$n] = $y; $pr[$n] = $r
+      $pn[$n] = $name; $ps[$n] = $size; $pt[$n] = RndRange -22 22
+      $n++
+      $got++
+      break
+    }
+  }
+  "  {0,-6} {1,2}-{2,2}px  placed {3}/{4}" -f $cls.Kind, $cls.Min, $cls.Max, $got, $want
 }
 
-# --- fillers on a finer stratified grid, thinned at random ---
-$fcells = @()
-for ($r = 0; $r -lt $FillerCols; $r++) { for ($c = 0; $c -lt $FillerCols; $c++) { $fcells += ,@($c, $r) } }
-$fcells = $fcells | Sort-Object { Rnd }
-$fw = $Tile / $FillerCols
-$fillerPlaced = 0
-
-foreach ($cell in $fcells) {
-  if ((Rnd) -gt $FillerKeep) { continue }
-  $roll = Rnd
-  if ($roll -lt 0.45)     { $size = RndRange 8 13 }
-  elseif ($roll -lt 0.80) { $size = RndRange 13 19 }
-  else                    { $size = RndRange 19 26 }
-
-  $spot = TryCell ($cell[0] * $fw) ($cell[1] * $fw) $fw $fw $size 0.80 16
-  if (-not $spot) { continue }
-  $spot.Name = $fillers[[int][Math]::Floor((Rnd) * $fillers.Count) % $fillers.Count]
-  $spot.Size = $size
-  $spot.Rot  = RndRange -45 45
-  [void]$placed.Add($spot); [void]$uses.Add($spot)
-  $fillerPlaced++
-}
-
-# --- emit, wrapping anything that overlaps an edge ---
+# --- emit with wrap copies ---
 $lines = New-Object System.Collections.ArrayList
 $copies = 0
-foreach ($u in $uses) {
-  $s = [Math]::Round($u.Size / 100.0, 3)
-  $reach = $u.Size * 0.75
+for ($i = 0; $i -lt $n; $i++) {
+  $s = [Math]::Round($ps[$i] / 100.0, 3)
+  $reach = $ps[$i] * 0.75
   foreach ($dx in -$Tile, 0, $Tile) {
     foreach ($dy in -$Tile, 0, $Tile) {
-      $x = $u.X + $dx; $y = $u.Y + $dy
+      $x = $px[$i] + $dx; $y = $py[$i] + $dy
       if ($x -lt -$reach -or $x -gt $Tile + $reach) { continue }
       if ($y -lt -$reach -or $y -gt $Tile + $reach) { continue }
-      $xs = [Math]::Round($x, 1); $ys = [Math]::Round($y, 1); $rs = [Math]::Round($u.Rot, 1)
-      [void]$lines.Add("    <use href=""#$($u.Name)"" transform=""translate($xs $ys) rotate($rs) scale($s) translate(-50 -50)""/>")
+      $xs = [Math]::Round($x, 1); $ys = [Math]::Round($y, 1); $rs = [Math]::Round($pt[$i], 1)
+      [void]$lines.Add("    <use href=""#$($pn[$i])"" transform=""translate($xs $ys) rotate($rs) scale($s) translate(-50 -50)""/>")
       if ($dx -ne 0 -or $dy -ne 0) { $copies++ }
     }
   }
@@ -144,12 +151,14 @@ $svg = @"
 <svg xmlns="http://www.w3.org/2000/svg" width="$Tile" height="$Tile" viewBox="0 0 $Tile $Tile">
   <!--
     GENERATED FILE - do not hand-edit.
-    Rebuild with scratchpad/gen-pattern.ps1 (seed $Seed).
+    Rebuild with tools/gen-pattern.ps1 (seed $Seed).
 
-    Doodle tile for the login background: $iconPlaced icons + $fillerPlaced filler marks,
-    stratified-scattered with toroidal spacing so the tile repeats without a seam.
-    Icons cover the family's travels (Texas, Oregon, California, Colorado,
-    France, Japan, China, Italy, Croatia, Spain), soccer, basketball, and food.
+    Doodle tile for the login background: $iconTotal icons + $fillTotal filler marks,
+    packed largest-first with a strict no-overlap constraint across size classes
+    spanning 26-96 units. Toroidal spacing plus edge wrapping makes the tile
+    repeat seamlessly. Icons cover the family's travels (Texas, Oregon,
+    California, Colorado, France, Japan, China, Italy, Croatia, Spain),
+    soccer, basketball, and a lot of food.
   -->
   <defs>
 $defs
@@ -162,9 +171,8 @@ $($lines -join "`n")
 "@
 
 Set-Content -Path $outPath -Value $svg -Encoding utf8
-"icons:    $iconPlaced / $($IconCols * $IconCols) cells"
-"fillers:  $fillerPlaced / $($FillerCols * $FillerCols) cells"
+"icons:    $iconTotal"
+"fillers:  $fillTotal"
 "wrapped:  $copies"
 "elements: $($lines.Count)"
 "size:     $([Math]::Round((Get-Item $outPath).Length/1KB,1)) KB"
-
