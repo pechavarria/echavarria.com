@@ -69,9 +69,51 @@ h1:has(.crest) + .sub { text-align: center; }
   width: 100%;
   max-width: 19rem;
   height: auto;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
+}
+
+/* --- login screen: warm ground + subtle doodle pattern --- */
+
+body.login {
+  --bg: #efe6d5;
+  --card: #fbf7ee;
+  --line: #d9cbb2;
+  --accent: #1d3a63;
+  --accent-fg: #fbf7ee;
+}
+
+@media (prefers-color-scheme: dark) {
+  body.login {
+    --bg: #0e1524;
+    --card: #17203a;
+    --line: #2e3d5e;
+    --accent: #c8a24a;
+    --accent-fg: #0e1524;
+  }
+}
+
+/* Out of flow, so it never becomes a grid item of the centring body. */
+body.login::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url("pattern.svg") repeat;
+  background-size: 360px auto;
+  opacity: .06;
+  pointer-events: none;
+}
+
+/* Strokes are dark; flip them so they read on the dark ground. */
+@media (prefers-color-scheme: dark) {
+  body.login::before {
+    filter: invert(1);
+    opacity: .085;
+  }
+}
+
+body.login main {
+  position: relative;
+  z-index: 1;
 }
 
 /* --- login --- */

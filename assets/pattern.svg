@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="600" viewBox="0 0 720 600">
+  <!--
+    Tiling doodle pattern for the login background. Each icon is authored in a
+    100x100 box centred on (50,50), then placed with
+    translate(cx cy) rotate(r) scale(s) translate(-50 -50).
+
+    Coverage: Texas (lone star, boot, cactus), Oregon (pine), California (palm,
+    Golden Gate), Colorado (mountains), France (Eiffel, croissant, wine),
+    Japan (torii, Fuji, nigiri, maki, chopsticks), China (pagoda, dumpling),
+    Italy (pizza, Colosseum), Croatia (sailboat), Spain (paella, guitar),
+    plus soccer, basketball and travel odds and ends.
+  -->
+  <defs>
+    <!-- sports -->
+    <g id="soccer">
+      <circle cx="50" cy="50" r="32"/>
+      <path d="M50 32 66 44 60 62H40l-6-18z"/>
+      <path d="M50 18v14M82 44 66 44M72 76 60 62M28 76l12-14M18 44l16 0"/>
+    </g>
+    <g id="basket">
+      <circle cx="50" cy="50" r="32"/>
+      <path d="M50 18v64M18 50h64"/>
+      <path d="M28 26q22 24 0 48M72 26q-22 24 0 48"/>
+    </g>
+
+    <!-- japan -->
+    <g id="nigiri">
+      <rect x="24" y="54" width="52" height="22" rx="11"/>
+      <rect x="22" y="38" width="56" height="16" rx="8" transform="rotate(-5 50 46)"/>
+      <path d="M48 38v16"/>
+    </g>
+    <g id="maki">
+      <circle cx="50" cy="50" r="30"/>
+      <circle cx="50" cy="50" r="15"/>
+      <circle cx="50" cy="43" r="4"/>
+    </g>
+    <g id="torii">
+      <path d="M18 34h64M24 24h52M34 34v48M66 34v48M30 48h40"/>
+    </g>
+    <g id="fuji">
+      <path d="M18 74 50 26l32 48z"/>
+      <path d="M38 47q6 7 12 0t12 0"/>
+    </g>
+    <g id="chopsticks">
+      <path d="M28 80 66 22M40 84 78 30"/>
+      <path d="M62 20l8 4M74 28l8 4"/>
+    </g>
+
+    <!-- china -->
+    <g id="pagoda">
+      <path d="M22 40h56L50 22z"/>
+      <path d="M28 58h44L50 40z"/>
+      <path d="M34 76h32L50 58z"/>
+      <path d="M46 76v10h8V76"/>
+    </g>
+    <g id="dumpling">
+      <path d="M20 64a30 26 0 0 1 60 0z"/>
+      <path d="M28 64q6-8 12 0M46 64q6-8 12 0M64 64q6-8 8 0"/>
+    </g>
+
+    <!-- italy -->
+    <g id="pizza">
+      <path d="M50 20 24 72a58 58 0 0 0 52 0z"/>
+      <circle cx="43" cy="52" r="4"/>
+      <circle cx="58" cy="60" r="4"/>
+      <circle cx="50" cy="38" r="3"/>
+    </g>
+    <g id="colosseum">
+      <path d="M22 48a28 18 0 0 1 56 0v28H22z"/>
+      <path d="M22 62h56"/>
+      <path d="M33 76V64a6 6 0 0 1 12 0v12M55 76V64a6 6 0 0 1 12 0v12"/>
+    </g>
+
+    <!-- france -->
+    <g id="eiffel">
+      <path d="M34 84 50 16l16 68"/>
+      <path d="M41 54h18M37 68h26M28 84h44"/>
+      <path d="M50 16v10"/>
+    </g>
+    <g id="croissant">
+      <path d="M20 62q0-30 30-30t30 30q-10-10-30-10t-30 10z"/>
+      <path d="M34 42l6 8M50 34v10M66 42l-6 8"/>
+    </g>
+    <g id="wine">
+      <path d="M34 22h32l-4 24a12 12 0 0 1-24 0z"/>
+      <path d="M50 58v20M38 80h24"/>
+    </g>
+
+    <!-- spain -->
+    <g id="paella">
+      <circle cx="50" cy="54" r="24"/>
+      <path d="M22 54H10M78 54h12"/>
+      <circle cx="43" cy="48" r="3"/>
+      <circle cx="57" cy="55" r="3"/>
+      <circle cx="49" cy="62" r="3"/>
+    </g>
+    <g id="guitar">
+      <circle cx="45" cy="65" r="18"/>
+      <circle cx="52" cy="43" r="12"/>
+      <circle cx="45" cy="65" r="6"/>
+      <path d="M58 34 74 18M64 22l8 8"/>
+    </g>
+
+    <!-- croatia -->
+    <g id="sailboat">
+      <path d="M16 66h68q-8 12-34 12T16 66z"/>
+      <path d="M46 62V18L24 62zM54 62V30l22 32z"/>
+    </g>
+    <g id="lighthouse">
+      <path d="M38 78 42 36h16l4 42z"/>
+      <path d="M40 50h20M36 36h28M46 26h8"/>
+      <path d="M22 30l10 4M78 30l-10 4"/>
+    </g>
+
+    <!-- usa -->
+    <g id="pine">
+      <path d="M50 18 34 44h32zM50 34 30 62h40zM50 50 26 80h48z"/>
+      <path d="M50 80v8"/>
+    </g>
+    <g id="star">
+      <path d="M50 18 60 42h26L65 58l8 25-23-16-23 16 8-25L14 42h26z"/>
+    </g>
+    <g id="boot">
+      <path d="M38 18h16v30l16 10v20H36q-2-30 2-60z"/>
+      <path d="M36 66h34"/>
+    </g>
+    <g id="cactus">
+      <path d="M50 84V26"/>
+      <path d="M50 56q-14 0-14-14v-8M50 66q14 0 14-16v-6"/>
+      <path d="M42 84h16"/>
+    </g>
+    <g id="palm">
+      <path d="M52 84q-4-26 0-44"/>
+      <path d="M52 40q-12-12-26-6M52 40q14-10 26 0M52 40q-6-14 4-20M52 40q10-8 20 2"/>
+    </g>
+    <g id="bridge">
+      <path d="M12 72h76"/>
+      <path d="M30 72V26M70 72V26"/>
+      <path d="M30 30q20 26 40 0"/>
+      <path d="M12 40 30 26M88 40 70 26"/>
+    </g>
+    <g id="mountains">
+      <path d="M12 76 38 32l16 26 10-14 28 32z"/>
+      <path d="M30 52h16"/>
+    </g>
+
+    <!-- travel -->
+    <g id="plane">
+      <path d="M14 48 84 22 60 78 46 56z"/>
+      <path d="M46 56 84 22"/>
+    </g>
+    <g id="suitcase">
+      <rect x="22" y="38" width="56" height="40" rx="6"/>
+      <path d="M40 38V28h20v10"/>
+      <path d="M38 38v40M62 38v40"/>
+    </g>
+    <g id="camera">
+      <rect x="18" y="36" width="64" height="42" rx="7"/>
+      <circle cx="50" cy="57" r="13"/>
+      <path d="M36 36l6-10h16l6 10"/>
+    </g>
+    <g id="compass">
+      <circle cx="50" cy="50" r="31"/>
+      <path d="M63 37 43 44l-6 19 20-7z"/>
+    </g>
+    <g id="globe">
+      <circle cx="50" cy="50" r="31"/>
+      <path d="M19 50h62"/>
+      <ellipse cx="50" cy="50" rx="14" ry="31"/>
+    </g>
+    <g id="coffee">
+      <path d="M24 42h40v20a14 14 0 0 1-14 14H38a14 14 0 0 1-14-14z"/>
+      <path d="M64 48h8a8 8 0 0 1 0 16h-8"/>
+      <path d="M36 32q0-6 5-10M50 32q0-6 5-10"/>
+    </g>
+  </defs>
+
+  <g fill="none" stroke="#101828" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- row 1 -->
+    <use href="#soccer"    transform="translate(58 54)   rotate(-8)  scale(.6) translate(-50 -50)"/>
+    <use href="#nigiri"    transform="translate(186 66)  rotate(6)   scale(.62) translate(-50 -50)"/>
+    <use href="#eiffel"    transform="translate(302 50)  rotate(-4)  scale(.58) translate(-50 -50)"/>
+    <use href="#pine"      transform="translate(430 62)  rotate(5)   scale(.6) translate(-50 -50)"/>
+    <use href="#star"      transform="translate(548 48)  rotate(-10) scale(.55) translate(-50 -50)"/>
+    <use href="#camera"    transform="translate(666 64)  rotate(7)   scale(.58) translate(-50 -50)"/>
+
+    <!-- row 2 -->
+    <use href="#plane"     transform="translate(46 178)  rotate(10)  scale(.6) translate(-50 -50)"/>
+    <use href="#maki"      transform="translate(172 190) rotate(-6)  scale(.58) translate(-50 -50)"/>
+    <use href="#torii"     transform="translate(300 174) rotate(4)   scale(.6) translate(-50 -50)"/>
+    <use href="#mountains" transform="translate(422 188) rotate(-5)  scale(.62) translate(-50 -50)"/>
+    <use href="#boot"      transform="translate(546 176) rotate(9)   scale(.56) translate(-50 -50)"/>
+    <use href="#wine"      transform="translate(668 190) rotate(-7)  scale(.56) translate(-50 -50)"/>
+
+    <!-- row 3 -->
+    <use href="#basket"    transform="translate(62 302)  rotate(6)   scale(.6) translate(-50 -50)"/>
+    <use href="#pizza"     transform="translate(180 292) rotate(-9)  scale(.6) translate(-50 -50)"/>
+    <use href="#fuji"      transform="translate(308 306) rotate(3)   scale(.62) translate(-50 -50)"/>
+    <use href="#palm"      transform="translate(430 294) rotate(-4)  scale(.6) translate(-50 -50)"/>
+    <use href="#cactus"    transform="translate(552 306) rotate(8)   scale(.58) translate(-50 -50)"/>
+    <use href="#compass"   transform="translate(664 292) rotate(-6)  scale(.58) translate(-50 -50)"/>
+
+    <!-- row 4 -->
+    <use href="#suitcase"  transform="translate(50 420)  rotate(-7)  scale(.58) translate(-50 -50)"/>
+    <use href="#croissant" transform="translate(176 432) rotate(8)   scale(.6) translate(-50 -50)"/>
+    <use href="#pagoda"    transform="translate(302 416) rotate(-3)  scale(.6) translate(-50 -50)"/>
+    <use href="#bridge"    transform="translate(426 430) rotate(4)   scale(.62) translate(-50 -50)"/>
+    <use href="#paella"    transform="translate(548 418) rotate(-8)  scale(.58) translate(-50 -50)"/>
+    <use href="#globe"     transform="translate(670 432) rotate(6)   scale(.56) translate(-50 -50)"/>
+
+    <!-- row 5 -->
+    <use href="#chopsticks" transform="translate(56 542)  rotate(5)   scale(.58) translate(-50 -50)"/>
+    <use href="#dumpling"   transform="translate(184 552) rotate(-6)  scale(.6) translate(-50 -50)"/>
+    <use href="#colosseum"  transform="translate(306 538) rotate(3)   scale(.6) translate(-50 -50)"/>
+    <use href="#sailboat"   transform="translate(428 552) rotate(-5)  scale(.62) translate(-50 -50)"/>
+    <use href="#guitar"     transform="translate(550 540) rotate(10)  scale(.58) translate(-50 -50)"/>
+    <use href="#coffee"     transform="translate(668 554) rotate(-7)  scale(.56) translate(-50 -50)"/>
+  </g>
+</svg>
