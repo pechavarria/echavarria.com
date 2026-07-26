@@ -3,6 +3,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>The Echavarria Family</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<meta name="theme-color" content="#0b1120">
 <link rel="stylesheet" href="assets/style.css">
 <script src="assets/auth.js"></script>
 <script>requireAccess();</script>
@@ -10,12 +14,56 @@
 <body class="hub">
 <main>
   <h1 class="wordmark">
-    <span class="wm-name">Echavarria</span>
-    <span class="wm-line">
-      <i class="wm-rule"></i>
-      <span class="wm-sub">Builes Family</span>
-      <i class="wm-rule"></i>
-    </span>
+    <!-- Inline (not <img>) so it inherits the page font and theme colour;
+         an external SVG gets neither. -->
+    <svg class="wm-svg" viewBox="0 0 760 215" role="img"
+         aria-label="Echavarria Builes Family" focusable="false">
+      <defs>
+        <linearGradient id="wmGold" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0"    stop-color="#f6e3ad"/>
+          <stop offset=".34"  stop-color="#d8ae55"/>
+          <stop offset=".62"  stop-color="#a87f2c"/>
+          <stop offset="1"    stop-color="#e3c579"/>
+        </linearGradient>
+        <linearGradient id="wmRule" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0"   stop-color="currentColor" stop-opacity="0"/>
+          <stop offset=".5"  stop-color="currentColor" stop-opacity=".75"/>
+          <stop offset="1"   stop-color="currentColor" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="wmLift" x="-15%" y="-30%" width="130%" height="180%">
+          <feDropShadow dx="0" dy="3" stdDeviation="4"
+                        flood-color="#000" flood-opacity=".28"/>
+        </filter>
+      </defs>
+
+      <!-- flourish above the name -->
+      <g fill="none" stroke="url(#wmRule)" stroke-width="3" stroke-linecap="round">
+        <path d="M262 34q52-21 96-5"/>
+        <path d="M498 34q-52-21-96-5"/>
+      </g>
+      <path d="M380 12 391 26 380 40 369 26z" fill="url(#wmGold)"/>
+
+      <!-- the name -->
+      <text x="389" y="130" text-anchor="middle"
+            font-size="94" font-weight="600" letter-spacing="15"
+            fill="url(#wmGold)" filter="url(#wmLift)">ECHAVARRIA</text>
+
+      <!-- Rules and diamonds flanking the sub-line. BUILES FAMILY at 27px with
+           11 tracking measures ~360 units, so it spans 204-564; the ornaments
+           must clear that or they collide with the glyphs. -->
+      <g stroke="url(#wmRule)" stroke-width="2.4">
+        <path d="M60 178h108"/>
+        <path d="M600 178h108"/>
+      </g>
+      <g fill="url(#wmGold)">
+        <path d="M182 170 191 178 182 186 173 178z"/>
+        <path d="M586 170 595 178 586 186 577 178z"/>
+      </g>
+
+      <text x="384" y="187" text-anchor="middle"
+            font-size="27" font-weight="550" letter-spacing="11"
+            fill="currentColor" opacity=".72">BUILES FAMILY</text>
+    </svg>
   </h1>
   <p class="sub">Who are you looking for?</p>
 

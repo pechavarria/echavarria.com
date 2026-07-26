@@ -221,49 +221,20 @@ body.hub main {
   text-align: center;
 }
 
-/* --- typographic wordmark (hub heading) --- */
+/* --- wordmark (hub heading) --- */
 
 .wordmark {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: .7rem;
-  margin: 0 0 2rem;
-  font-weight: 600;
+  margin: .5rem 0 2rem;
+  /* currentColor drives the rules and sub-line inside the SVG. */
+  color: var(--fg);
 }
 
-.wm-name {
-  font-size: clamp(1.5rem, 7.5vw, 2.6rem);
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: .17em;
-  /* Letter-spacing appends a trailing gap after the final glyph, which throws
-     centring off by half that amount. Pull it back. */
-  margin-right: -.17em;
-}
-
-.wm-line {
-  display: flex;
-  align-items: center;
-  gap: clamp(.5rem, 2.5vw, .85rem);
-  color: var(--muted);
-}
-
-.wm-sub {
-  font-size: clamp(.58rem, 2.3vw, .74rem);
-  font-weight: 550;
-  text-transform: uppercase;
-  letter-spacing: .34em;
-  white-space: nowrap;
-  margin-right: -.34em;
-}
-
-.wm-rule {
+.wm-svg {
   display: block;
-  width: clamp(1rem, 7vw, 2.75rem);
-  height: 1px;
-  background: currentColor;
-  opacity: .45;
+  width: 100%;
+  max-width: 27rem;
+  height: auto;
+  margin: 0 auto;
 }
 
 /* Portrait on an individual member page. Same height:auto requirement as
